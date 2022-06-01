@@ -1,5 +1,6 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+
 const About = () => {
   const particlesInit = async (main: any) => {
     console.log(main);
@@ -11,7 +12,7 @@ const About = () => {
   };
 
   return (
-    <div className="h-screen bg-orange-700">
+    <div className="h-screen flex">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -30,7 +31,7 @@ const About = () => {
 
           fullScreen: {
             enable: true,
-            zIndex: 1,
+            zIndex: 0,
           },
           detectRetina: true,
           duration: 0,
@@ -45,10 +46,10 @@ const About = () => {
 
               onHover: {
                 enable: true,
-                mode: "bubble",
+                mode: "connect",
                 parallax: {
                   enable: false,
-                  force: 2,
+                  force: 60,
                   smooth: 10,
                 },
               },
@@ -521,6 +522,31 @@ const About = () => {
           zLayers: 100,
         }}
       />
+
+      <div className=" p-8 w-4/6 z-10 flex justify-end items-center  ">
+        <main className="w-3/4 relative">
+          <div className="z-10 relative border-2 border-solid  border-white backdrop-blur-sm text-white font-mono italic text-xl py-14 px-11">
+            I'm a front-end developer located in iran. I love to create simple
+            yet beautiful websites with great user experience.
+            <br /> <br />
+            I'm interested in the whole frontend stack Like trying new things
+            and building great projects. I'm an independent freelancer and
+            blogger. I love to write blogs and read books.
+            <br /> <br />I believe everything is an Art when you put your
+            consciousness in it. You can connect with me via social links.
+          </div>
+
+          <span className="text-yellow-50 sepia  text-9xl z-0 absolute -top-20 -left-6">
+            About
+          </span>
+        </main>
+      </div>
+      <div className=" w-2/6  flex justify-center items-center z-10 ">
+        <img
+          className=" w-70 h-auto animate-wiggle mb-28"
+          src="/images/spaceman.png"
+        />
+      </div>
     </div>
   );
 };
