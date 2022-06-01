@@ -12,8 +12,9 @@ const About = () => {
   };
 
   return (
-    <div className="h-screen flex">
+    <div className="w-full min-h-screen bg-slate-500 relative  flex">
       <Particles
+        style={{ position: "absolute" }}
         id="tsparticles"
         init={particlesInit}
         options={{
@@ -22,17 +23,11 @@ const About = () => {
             color: {
               value: "#232741",
             },
-
-            position: "50% 50%",
-            repeat: "no-repeat",
-            size: "20%",
-            opacity: 1,
           },
-
           fullScreen: {
-            enable: true,
-            zIndex: 0,
+            enable: false,
           },
+
           detectRetina: true,
           duration: 0,
           fpsLimit: 120,
@@ -503,29 +498,18 @@ const About = () => {
               enable: false,
               speed: 50,
             },
-            zIndex: {
-              random: {
-                enable: false,
-                minimumValue: 0,
-              },
-              value: 0,
-              opacityRate: 1,
-              sizeRate: 1,
-              velocityRate: 1,
-            },
           },
           pauseOnBlur: true,
           pauseOnOutsideViewport: true,
           responsive: [],
           style: {},
           themes: [],
-          zLayers: 100,
         }}
       />
 
       <div className=" p-8 w-4/6 z-10 flex justify-end items-center  ">
         <main className="w-3/4 relative">
-          <div className="z-10 relative border-2 border-solid  border-white backdrop-blur-sm text-white font-mono italic text-xl py-14 px-11">
+          <div className="z-10 relative border-2 border-solid  border-white backdrop-blur-[2px] text-white font-mono italic text-xl py-14 px-11">
             I'm a front-end developer located in iran. I love to create simple
             yet beautiful websites with great user experience.
             <br /> <br />
@@ -536,7 +520,7 @@ const About = () => {
             consciousness in it. You can connect with me via social links.
           </div>
 
-          <span className="text-yellow-50 sepia  text-9xl z-0 absolute -top-20 -left-6">
+          <span className="text-yellow-50   text-9xl z-0 absolute -top-20 -left-6">
             About
           </span>
         </main>
