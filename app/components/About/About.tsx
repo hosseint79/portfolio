@@ -26,6 +26,7 @@ const About = () => {
           },
           fullScreen: {
             enable: false,
+            zIndex: 0,
           },
 
           detectRetina: true,
@@ -520,7 +521,7 @@ const About = () => {
             consciousness in it. You can connect with me via social links.
           </div>
 
-          <span className="text-yellow-50   text-9xl z-0 absolute -top-20 -left-6">
+          <span className="text-gray-400  text-9xl z-0 absolute -top-20 -left-6">
             About
           </span>
         </main>
