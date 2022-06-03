@@ -12,18 +12,14 @@ const About = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-slate-500 relative  flex">
+    <div className="w-full min-h-screen bg-black  relative   flex">
       <Particles
         style={{ position: "absolute" }}
         id="tsparticles"
         init={particlesInit}
         options={{
           autoPlay: true,
-          background: {
-            color: {
-              value: "#232741",
-            },
-          },
+
           fullScreen: {
             enable: false,
             zIndex: 0,
@@ -510,7 +506,10 @@ const About = () => {
 
       <div className=" p-8 w-4/6 z-10 flex justify-end items-center  ">
         <main className="w-3/4 relative">
-          <div className="z-10 relative border-2 border-solid  border-white backdrop-blur-[2px] text-white font-mono italic text-xl py-14 px-11">
+          <div
+            style={{ fontFamily: "monospace", fontStyle: "italic" }}
+            className="z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-11"
+          >
             I'm a front-end developer located in iran. I love to create simple
             yet beautiful websites with great user experience.
             <br /> <br />
@@ -521,14 +520,21 @@ const About = () => {
             consciousness in it. You can connect with me via social links.
           </div>
 
-          <span className="text-gray-400  text-9xl z-0 absolute -top-20 -left-6">
-            About
-          </span>
+          <h1
+            className=" text-9xl z-0 absolute font-semibold -top-20 -left-16"
+            style={{
+              fontFamily: "sans-serif",
+              fontSize: "calc(5rem + 5vw)",
+              color: "rgba(252,246,244,0.1)",
+            }}
+          >
+            ABOUT
+          </h1>
         </main>
       </div>
       <div className=" w-2/6  flex justify-center items-center z-10 ">
         <img
-          className=" w-70 h-auto animate-wiggle mb-28"
+          className=" w-64 h-auto animate-wiggle mb-36"
           src="/images/spaceman.png"
         />
       </div>

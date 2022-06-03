@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <div className=" h-full z-50 fixed top-0 left-8 flex items-center">
       <div
-        className=" w-10 bg-black opacity-60 z-50  p-4 box-content  rounded-[35px] flex items-center flex-col
+        className=" w-10 bg-zinc-800 opacity-60 z-50  p-4 box-content  rounded-[35px] flex items-center flex-col
     
     "
       >
