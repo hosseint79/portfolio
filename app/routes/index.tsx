@@ -5,9 +5,11 @@ import { Layout } from "~/components/Layout/Layout";
 export default function Index() {
   return (
     <Layout>
-      <About />
-      <div className="h-[1700px] w-full bg-[#0A192F]">
-        <Footer />
+      <div id="home">
+        <About />
+        <div className="h-[1700px] w-full bg-[#0A192F] border border-transparent ">
+          <Footer />
+        </div>
       </div>
     </Layout>
   );

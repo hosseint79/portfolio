@@ -7,36 +7,16 @@ import { TiSocialGithub } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <div id="footer" className="container footer-container">
-      <h1>
-        That's all{" "}
-        <a href="#home">
-          <h2>
-            <BsMouse /> - scroll up -
-          </h2>
-        </a>
-      </h1>
-      <div className="social-links">
-        <a href="#">
-          <BsInstagram className="social" />
-        </a>
-        <a href="#">
-          {" "}
-          <FaFacebookF className="social" />
-        </a>
-        <a href="#">
-          {" "}
-          <TiSocialDribbble className="social" />
-        </a>
-
-        <a href="#">
-          <TiSocialYoutube className="social" />
-        </a>
-
-        <a href="#">
-          <TiSocialGithub className="social" />
-        </a>
-      </div>
+    <div
+      id="footer"
+      className=" h-[400px] text-white mt-64 flex flex-col  items-center text-xl font-light"
+    >
+      <span className="my-5">That's all</span>
+      <a href="#home">
+        <h2 className=" flex flex-col items-center justify-center ">
+          <BsMouse className="mb-5" size={27} /> - scroll up -
+        </h2>
+      </a>
     </div>
   );
 };
