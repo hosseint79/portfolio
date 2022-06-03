@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+import { BsMouse } from "react-icons/bs";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -11,8 +13,17 @@ const About = () => {
     await loadFull(main);
   };
 
+  const handleClick = (e: any) => {
+    e.preventDefault();
+    // window.scrollTo({
+    //   left: 0,
+    //   top: 0,
+    //   behavior: "smooth",
+    // });
+  };
+
   return (
-    <div className="w-full min-h-screen bg-black  relative   flex">
+    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#0A192F] relative   flex">
       <Particles
         style={{ position: "absolute" }}
         id="tsparticles"
@@ -538,6 +549,16 @@ const About = () => {
           src="/images/spaceman.png"
         />
       </div>
+
+      <a
+        href="#footer"
+        className="flex items-center h-auto absolute  z-50 -right-12 bottom-28 p-4 rotate-90 text-white"
+      >
+        <span className="h-[3px] w-6 border border-white mx-3"> </span>
+        <h6>SCROLL DOWN</h6>
+        <BsMouse className="ml-2 rotate-90" />
+        <span className="h-[3px] w-6 border border-white mx-3"> </span>
+      </a>
     </div>
   );
 };
