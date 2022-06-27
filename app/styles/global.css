@@ -1,3 +1,37 @@
 html {
   scroll-behavior: smooth !important;
 }
+
+.cvBtn .cvBtnAnimation {
+ display: none;
+ background: #a698c4c6;
+ box-shadow: 0px 0px 10px 3px rgb(190, 240, 240);
+}
+.cvBtn:hover .cvBtnAnimation {
+  display: block;
+  animation: star 3.3s linear infinite;
+}
+
+@keyframes star {
+  0% {
+    left: -6px;
+    top: -6px;
+  }
+  25% {
+    left: calc(100% - 6px) ;
+    top: -6px;
+  }
+
+  50% {
+    left: calc(100% - 6px) ;
+    top: calc(100% - 6px) ;
+  }
+  75% {
+    left: -6px;
+    top: calc(100% - 6px) ;
+  }
+  100% {
+    left: -6px;
+    top: -6px;
+  }
+}

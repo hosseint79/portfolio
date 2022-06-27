@@ -7,7 +7,7 @@ export default function Index() {
     <Layout>
       <div id="home">
         <About />
-        <div className="h-[1700px] w-full bg-[#0A192F] border border-transparent ">
+        <div className="h-[1700px] w-full bg-[#110f1c] border border-transparent ">
           <Footer />
         </div>
       </div>
