@@ -36,7 +36,7 @@ const About = () => {
       />
 
       <div className=" p-8 w-4/6 z-10 flex justify-end items-center  ">
-        <main className="w-3/4 relative">
+        <main className="w-5/6 relative">
           <div
             style={{ fontFamily: "monospace", fontStyle: "italic" }}
             className="z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-11"
@@ -66,7 +66,7 @@ const About = () => {
           </h1>
         </main>
       </div>
-      <div className=" w-2/6  flex justify-center items-center z-10 ">
+      <div className=" w-2/6 flex justify-center items-center z-10 ">
         <img
           className=" w-64 h-auto animate-wiggle mb-36"
           src="/images/spaceman.png"
