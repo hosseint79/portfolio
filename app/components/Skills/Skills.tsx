@@ -6,7 +6,7 @@ function Skills() {
     return ( 
         <section className="w-full my-6">
             <HeaderSection />
-            <div className="container m-auto  ">
+            <div className="container m-auto px-16">
                 <ShortInfo />
                 <SkillsContainer />
             </div>
