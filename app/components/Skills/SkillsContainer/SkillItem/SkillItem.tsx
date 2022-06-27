@@ -12,7 +12,7 @@ function SkillItem({percentageer,title}:IProps) {
                 <span className="text-[#BBB9C2]"> {percentageer}%</span>
             </div>
             <div className="bg-violet-300 w-full h-2 rounded">
-                <div className="bg-violet-700 h-full" style={{width:percentageer + "%"}}></div>
+                <div className="bg-indigo-800 h-full rounded-tl rounded-bl" style={{width:percentageer + "%"}}></div>
             </div>
         </div>
     );
