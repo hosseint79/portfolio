@@ -9,7 +9,7 @@ export default function Index() {
       <div id="home">
         <About />
         
-        <div className="h-[1700px] w-full bg-[#110f1c] border border-transparent ">
+        <div className=" w-full bg-[#110f1c] border border-transparent ">
         <Skills />
           <Footer />
         </div>

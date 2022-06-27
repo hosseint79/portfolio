@@ -1,15 +1,12 @@
 import { BsMouse } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
-import { TiSocialDribbble } from "react-icons/ti";
-import { TiSocialYoutube } from "react-icons/ti";
-import { TiSocialGithub } from "react-icons/ti";
+
+import { SocialMedia } from "./SocialMedia/SocialMedia";
 
 const Footer = () => {
   return (
     <div
       id="footer"
-      className=" h-[400px] text-white mt-64 flex flex-col  items-center text-xl font-light"
+      className=" py-8 text-white mt-64 flex flex-col  items-center text-xl font-light"
     >
       <span className="my-5">That's all</span>
       <a href="#home">
@@ -17,6 +14,7 @@ const Footer = () => {
           <BsMouse className="mb-5" size={27} /> - scroll up -
         </h2>
       </a>
+      <SocialMedia />
     </div>
   );
 };
