@@ -1,5 +1,6 @@
 import {HeaderSection} from "./HeaderSection/HeaderSection";
 import { ShortInfo } from "./ShortInfo/ShortInfo";
+import { SkillsContainer } from "./SkillsContainer/SkillsContainer";
 
 function Skills() {
     return ( 
@@ -7,6 +8,7 @@ function Skills() {
             <HeaderSection />
             <div className="container m-auto  ">
                 <ShortInfo />
+                <SkillsContainer />
             </div>
         </section>
      );

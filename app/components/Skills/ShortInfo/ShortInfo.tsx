@@ -2,7 +2,7 @@ import { ShortInfoItem } from "./ShortInfoItem/ShortInfoItem";
 
 function ShortInfo() {
     return (  
-        <div className="flex justify-center items-center my-9 text-white">
+        <div className="flex justify-center items-center my-20 text-white">
                     
             <ShortInfoItem count={"03"} firstTitle="Years" secondTitle="experience"/>
             <ShortInfoItem count={"06"} firstTitle="Completed" secondTitle="projects"/>
