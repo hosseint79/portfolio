@@ -42,7 +42,7 @@ function ContactMe() {
                         <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
                             Last Name
                         </label>
-                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="Doe" />
                     </div>                     
                 </div>
                 
