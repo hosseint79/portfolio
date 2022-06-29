@@ -27,7 +27,7 @@ const About = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative   flex">
+    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative flex">
       <Particles
         style={{ position: "absolute" }}
         id="tsparticles"

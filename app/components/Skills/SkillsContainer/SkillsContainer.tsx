@@ -2,7 +2,7 @@ import { SkillItem } from "./SkillItem/SkillItem";
 
 function SkillsContainer() {
     return (
-        <div>
+        <div className="py-12">
 
         <div className="my-8 gap-16 px-16 flex">
             <div className="w-1/2">
