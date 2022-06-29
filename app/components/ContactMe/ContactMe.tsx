@@ -25,21 +25,27 @@ function ContactMe() {
                  </div>
                 <div className="col-span-3 ">
                     <div className="flex">
-                        <div className="w-full md:w-1/2 px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                        <div className="w-full md:w-1/2 px-3 ">
+                            <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
                                 Last Name
                             </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
                         </div>
                         <div className="w-full md:w-1/2 px-3">
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                            <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
                                 Last Name
                             </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-700 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
                         </div>                     
                     </div>
-                   
+                    <div className="w-full px-3 mt-5">
+                        <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                            Last Name
+                        </label>
+                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                    </div>                     
                 </div>
+                
             </div>
         </Container>
 
