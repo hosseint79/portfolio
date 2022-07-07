@@ -50,7 +50,7 @@ function ContactMe() {
                             <h5 className="font-bold text-lg mb-[2px]">
                                Email
                             </h5>
-                            <CopyToClipboard text="09397233907" onCopy={() => setCopy2(true)}>
+                            <CopyToClipboard text="hossein.w7979@gmail.com" onCopy={() => setCopy2(true)}>
                                
                                 <h6 className="flex items-center cursor-pointer">
                                   
@@ -77,7 +77,7 @@ function ContactMe() {
                                Location
                             </h5>
 
-                            <CopyToClipboard text="09397233907" onCopy={() => setCopy3(true)}>
+                            <CopyToClipboard text="iran - sari" onCopy={() => setCopy3(true)}>
                                
                                 <h6 className="flex items-center cursor-pointer">
                                   
@@ -94,7 +94,8 @@ function ContactMe() {
                         </div>
                     </div>
                  </div>
-                <div className="col-span-3 ">
+                
+                    <div className="col-span-3 ">
                     <div className="flex">
                         <div className="w-full md:w-1/2 px-3 ">
                             <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
@@ -116,6 +117,8 @@ function ContactMe() {
                         <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
                     </div>                     
                 </div>
+          
+                
                 
             </div>
         </Container>
