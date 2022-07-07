@@ -794,8 +794,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .animate-wiggle {
-  -webkit-animation: wiggle 2.7s ease-in-out infinite;
-          animation: wiggle 2.7s ease-in-out infinite;
+  -webkit-animation: wiggle 3.2s ease-in-out infinite;
+          animation: wiggle 3.2s ease-in-out infinite;
 }
 
 .cursor-pointer {
@@ -994,14 +994,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.75rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .px-3 {
