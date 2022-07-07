@@ -12,6 +12,11 @@ html {
   animation: star 3.3s linear infinite;
 }
 
+img,
+video {
+  max-width: none;
+  height: auto;
+}
 @keyframes star {
   0% {
     left: -6px;
