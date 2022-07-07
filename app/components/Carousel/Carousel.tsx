@@ -6,18 +6,26 @@ import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
 
 let slides = [
-  {
+   {
     key: 11,
-    content: <img src="https://picsum.photos/800/801/?random" alt="1" style={{width:"500px",height:"500px"}} />
+    content: <a href="https://erp.sabak.org/" target="__blank">
+      <img src="/images/works/work1.png" alt="1" style={{height:"350px",borderRadius:"10px",boxShadow:"0 0px 10px 3px #564f7f"}} />
+    </a>
   },
+   {
+    key: 33,
+    content: <a href="https://navaa.co/" target="__blank">
+      <img src="/images/works/work3.png" alt="2" style={{height:"350px",borderRadius:"10px",boxShadow:"0 0px 10px 3px #564f7f"}}/>
+    </a> 
+  },
+  
   {
     key: 22,
-    content: <img src="https://picsum.photos/800/802/?random" alt="2" style={{width:"500px",height:"500px"}}/>
+    content: <a href="https://zeemind.ir/" target="__blank">
+      <img src="/images/works/work2.png" alt="2" style={{height:"350px",borderRadius:"10px",boxShadow:"0 0px 10px 3px #564f7f"}}/>
+    </a> 
   },
-  {
-    key: 33,
-    content: <img src="https://picsum.photos/600/803/?random" alt="3" style={{width:"500px",height:"500px"}}/>
-  },
+
 
 
 ];
