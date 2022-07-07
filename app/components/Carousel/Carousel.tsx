@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import Carousel from "react-spring-3d-carousel";
 
 import { config } from "react-spring";
@@ -21,36 +21,24 @@ let slides = [
 
 
 ];
-
-export default class Example extends Component {
-  state = {
-    goToSlide: 1,
-    offsetRadius: 2,
-    showNavigation: true,
-    config: config.gentle
-  };
-
-
-
-  render() {
-    return (
+function TdCarousel() {
+     return (
         
         <Container>
             <SectionHeader title="Projects" caption="Some of my projects"/>
             <div className="px-16 threeD-carousel-button" style={{ height: "400px", margin: "0 auto" }} >
                 <Carousel
                     slides={slides}
-                    goToSlide={this.state.goToSlide}
-                    offsetRadius={this.state.offsetRadius}
-                    showNavigation={this.state.showNavigation}
-                    animationConfig={this.state.config}
-
-                />
-            
-                
+                    goToSlide={1}
+                    offsetRadius={2}
+                    showNavigation={true}
+                    animationConfig={config.gentle}
+                />          
             </div>
         </Container>
 
-    );
-  }
+    ); 
 }
+
+export default TdCarousel;
+

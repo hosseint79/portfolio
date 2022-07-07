@@ -2,6 +2,7 @@ import { lazy, ReactNode, Suspense, useEffect, useState } from "react";
 
 import { About } from "~/components/About/About";
 
+
 import { ContactMe } from "~/components/ContactMe/ContactMe";
 import { Footer } from "~/components/Footer/Footer";
 import { Layout } from "~/components/Layout/Layout";
@@ -9,7 +10,7 @@ import {Skills} from "~/components/Skills/Skills";
 
 
 
-let Example = lazy(() => import("~/components/Carousel/Carousel"));
+let TdCarousel = lazy(() => import("~/components/Carousel/Carousel"));
 
 
 export function ClientOnly({ children }: { children: ReactNode }) {
@@ -32,7 +33,7 @@ export default function Index() {
          
             <ClientOnly>
             <Suspense fallback="">
-              <Example />
+              <TdCarousel />
             </Suspense>
           </ClientOnly>
           
