@@ -17,6 +17,11 @@ video {
   max-width: none;
   height: auto;
 }
+
+.threeD-carousel-button > div:nth-child(2) {
+  margin-top: 65px;
+}
+
 @keyframes star {
   0% {
     left: -6px;
