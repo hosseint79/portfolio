@@ -4,10 +4,10 @@ function ShortInfo() {
     return (  
         <div className="flex justify-center items-center text-white">
                     
-            <ShortInfoItem count={"03"} firstTitle="Years" secondTitle="experience"/>
-            <ShortInfoItem count={"06"} firstTitle="Completed" secondTitle="projects"/>
+            <ShortInfoItem count={"04"} firstTitle="Years" secondTitle="experience"/>
+            <ShortInfoItem count={"05"} firstTitle="Completed" secondTitle="projects"/>
 
-            <ShortInfoItem count={"03"} firstTitle="Companies" secondTitle="worked"/>
+            <ShortInfoItem count={"02"} firstTitle="Companies" secondTitle="worked"/>
 
                    
         </div>

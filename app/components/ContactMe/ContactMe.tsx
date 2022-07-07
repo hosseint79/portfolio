@@ -1,11 +1,18 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { FiPhone } from "react-icons/fi";
+import { FiCheckSquare, FiPhone } from "react-icons/fi";
 import { TiLocation } from "react-icons/ti";
 import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
-
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { useState } from "react";
 
 function ContactMe() {
+    // should refactor
+    const [copy1,setCopy1] = useState(false)
+    const [copy2,setCopy2] = useState(false)
+    const [copy3,setCopy3] = useState(false)
+
+    
     return (  
         <Container>
             <SectionHeader title="Contact Me" caption="Get in touch"/>
@@ -19,23 +26,47 @@ function ContactMe() {
                             <h5 className="font-bold text-lg mb-[2px]">
                                Call Me
                             </h5>
-                            <h6>
-                                09397233907
-                            </h6>
+                            <CopyToClipboard text="09397233907" onCopy={() => setCopy1(true)}>
+                               
+                                <h6 className="flex items-center cursor-pointer">
+                                  
+                                    09397233907
+                                    <span className="ml-2">
+{
+                                        copy1 && <FiCheckSquare color="#3dc66b"/>
+                                     }
+                                    </span>
+                                    
+                                </h6>
+                            </CopyToClipboard>
+
+                           
                         </div>
                     </div>
                       <div className="flex items-center text-white mb-6">
                         
                         <AiOutlineMail size={30} className="mx-4 text-indigo-600"  />
-                        
                         <div>
                             <h5 className="font-bold text-lg mb-[2px]">
                                Email
                             </h5>
-                            <h6>
-                                hossein.w7979@gmail.com
-                            </h6>
+                            <CopyToClipboard text="09397233907" onCopy={() => setCopy2(true)}>
+                               
+                                <h6 className="flex items-center cursor-pointer">
+                                  
+                                    hossein.w7979@gmail.com
+                                    <span className="ml-2">
+                                    {
+                                        copy2 && <FiCheckSquare color="#3dc66b"/>
+                                     }
+                                    </span>
+                                    
+                                </h6>
+                            </CopyToClipboard>
+
+                           
                         </div>
+             
                     </div>
                       <div className="flex items-center text-white mb-6">
                         
@@ -45,9 +76,21 @@ function ContactMe() {
                             <h5 className="font-bold text-lg mb-[2px]">
                                Location
                             </h5>
-                            <h6>
-                                iran - sari
-                            </h6>
+
+                            <CopyToClipboard text="09397233907" onCopy={() => setCopy3(true)}>
+                               
+                                <h6 className="flex items-center cursor-pointer">
+                                  
+                                    iran - sari
+                                    <span className="ml-2">
+                                    {
+                                        copy3 && <FiCheckSquare color="#3dc66b"/>
+                                     }
+                                    </span>
+                                    
+                                </h6>
+                            </CopyToClipboard>
+                          
                         </div>
                     </div>
                  </div>
@@ -55,22 +98,22 @@ function ContactMe() {
                     <div className="flex">
                         <div className="w-full md:w-1/2 px-3 ">
                             <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                Last Name
+                                name
                             </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="name" />
                         </div>
                         <div className="w-full md:w-1/2 px-3">
                             <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                Last Name
+                                phone number
                             </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="Doe" />
+                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="phone munber" />
                         </div>                     
                     </div>
                     <div className="w-full px-3 mt-5">
                         <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                            Last Name
+                            message
                         </label>
-                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="Doe" />
+                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
                     </div>                     
                 </div>
                 
