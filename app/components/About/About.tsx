@@ -9,25 +9,12 @@ import CvButton from "../CvButton/CvButton";
 
 const About = () => {
   const particlesInit = async (main: any) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
-  const handleClick = (e: any) => {
-    e.preventDefault();
-    // window.scrollTo({
-    //   left: 0,
-    //   top: 0,
-    //   behavior: "smooth",
-    // });
-  };
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative flex">
+    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative flex  flex-col md:flex-row">
       <Particles
         style={{ position: "absolute" }}
         id="tsparticles"
@@ -35,11 +22,11 @@ const About = () => {
         options={{...particleConfig}}
       />
 
-      <div className=" p-8 w-4/6 z-10 flex justify-end items-center  ">
-        <main className="w-5/6 relative">
+      <div className=" w-full md:p-8 md:w-4/6 z-10 flex justify-end items-center order-2 md:order-1 ">
+        <main className=" w-full mx-4 md:w-5/6 relative">
           <div
             style={{ fontFamily: "monospace", fontStyle: "italic" }}
-            className="z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-11"
+            className="w-full z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-5 md:px-11"
           >
             I'm a front-end developer located in iran. I love to create simple
             yet beautiful websites with great user experience.
@@ -66,7 +53,7 @@ const About = () => {
           </h1>
         </main>
       </div>
-      <div className=" w-2/6 flex justify-center items-center z-10 ">
+      <div className="w-full md:w-2/6 flex justify-center items-center z-10 order-1 md:order-2 ">
         <img
           className=" w-64 h-auto animate-wiggle mb-36"
           src="/images/spaceman.png"

@@ -4,6 +4,7 @@ import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
+import { ActionFunction, redirect } from "@remix-run/node";
 
 let slides = [
    {
@@ -49,4 +50,6 @@ function TdCarousel() {
 }
 
 export default TdCarousel;
+
+
 

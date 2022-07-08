@@ -27,7 +27,7 @@ export default function Index() {
       <div id="home">
         <About />
         
-        <div className=" w-full bg-[#110f1c] border border-transparent ">
+        {/* <div className=" w-full bg-[#110f1c] border border-transparent ">
           <Skills />
           <ContactMe />
          
@@ -39,7 +39,7 @@ export default function Index() {
           
              
           <Footer />
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

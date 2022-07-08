@@ -5,6 +5,7 @@ import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { useState } from "react";
+import { ActionFunction, redirect } from "@remix-run/node";
 
 function ContactMe() {
     // should refactor
@@ -94,29 +95,32 @@ function ContactMe() {
                         </div>
                     </div>
                  </div>
-                
-                    <div className="col-span-3 ">
-                    <div className="flex">
-                        <div className="w-full md:w-1/2 px-3 ">
-                            <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                name
-                            </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="name" />
+                <form action="/" method="get" className="col-span-3 ">
+                    <div >
+                        <div className="flex">
+                            <div className="w-full md:w-1/2 px-3 ">
+                                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                                    name
+                                </label>
+                                <input name="name" className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="name" />
+                            </div>
+                            <div className="w-full md:w-1/2 px-3">
+                                <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
+                                    phone number
+                                </label>
+                                <input name="number" className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="phone munber" />
+                            </div>                     
                         </div>
-                        <div className="w-full md:w-1/2 px-3">
+                        <div className="w-full px-3 mt-5">
                             <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                                phone number
+                                message
                             </label>
-                            <input className="appearance-none block w-full bg-[#211D35] text-gray-400 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name" type="text" placeholder="phone munber" />
+                            <textarea name="message" className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
                         </div>                     
                     </div>
-                    <div className="w-full px-3 mt-5">
-                        <label className="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2" htmlFor="grid-last-name">
-                            message
-                        </label>
-                        <textarea className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
-                    </div>                     
-                </div>
+                    <button className="bg-neutral-200">click</button>
+                </form>
+
           
                 
                 
@@ -127,3 +131,17 @@ function ContactMe() {
 }
 
 export  {ContactMe};
+
+
+export const action: ActionFunction = async ({ request }) => {
+  const formData = await request.formData();
+
+  const name = formData.get("name");
+  const number = formData.get("number");
+
+    console.log(name)
+    console.log(number)
+
+
+  return redirect(`/`);
+}
