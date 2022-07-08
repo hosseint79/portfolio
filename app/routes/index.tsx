@@ -29,9 +29,9 @@ export default function Index() {
         
         <div className=" w-full bg-[#110f1c] border border-transparent ">
           <Skills />
-          {/* <ContactMe />
+          <ContactMe />
          
-            <ClientOnly>
+            {/* <ClientOnly>
             <Suspense fallback="">
               <TdCarousel />
             </Suspense>

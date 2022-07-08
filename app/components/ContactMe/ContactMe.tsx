@@ -17,12 +17,10 @@ function ContactMe() {
     return (  
         <Container>
             <SectionHeader title="Contact Me" caption="Get in touch"/>
-            <div className=" grid gap-6 py-8 grid-cols-5 px-16" >
-                 <div className="col-span-2 ">
-                    <div className="flex items-center text-white mb-6">
-                        
-                        <FiPhone size={30} className="mx-4 text-indigo-600"  />
-                        
+            <div className=" grid gap-6 py-8 grid-cols-5  md:px-12 lg:px-16" >
+                 <div className="md:col-span-2 col-span-5 flex flex-col">
+                    <div className="flex items-center text-white mb-6">                      
+                        <FiPhone size={30} className="mx-4 text-indigo-600"  />                     
                         <div>
                             <h5 className="font-bold text-lg mb-[2px]">
                                Call Me
@@ -34,7 +32,7 @@ function ContactMe() {
                                     09397233907
                                     <span className="ml-2">
 {
-                                        copy1 && <FiCheckSquare color="#3dc66b"/>
+                                        copy1 && <span className="text-[#3dc66b] flex items-center"> <FiCheckSquare color="#3dc66b" className="mx-3" /> <span>copied!</span></span>
                                      }
                                     </span>
                                     
@@ -44,9 +42,8 @@ function ContactMe() {
                            
                         </div>
                     </div>
-                      <div className="flex items-center text-white mb-6">
-                        
-                        <AiOutlineMail size={30} className="mx-4 text-indigo-600"  />
+                      <div className="flex items-center text-white mb-6">                  
+                        <AiOutlineMail style={{fontSize:"30px"}} className="mx-4 text-indigo-600"  />
                         <div>
                             <h5 className="font-bold text-lg mb-[2px]">
                                Email
@@ -58,7 +55,7 @@ function ContactMe() {
                                     hossein.w7979@gmail.com
                                     <span className="ml-2">
                                     {
-                                        copy2 && <FiCheckSquare color="#3dc66b"/>
+ copy2 && <span className="text-[#3dc66b] flex items-center"> <FiCheckSquare color="#3dc66b" className="mx-3" /> <span>copied!</span></span>
                                      }
                                     </span>
                                     
@@ -66,13 +63,10 @@ function ContactMe() {
                             </CopyToClipboard>
 
                            
-                        </div>
-             
+                        </div>  
                     </div>
-                      <div className="flex items-center text-white mb-6">
-                        
-                        <TiLocation size={33} className="mx-4 text-indigo-600"  />
-                        
+                      <div className="flex items-center text-white mb-6">             
+                        <TiLocation size={33} className="mx-4 text-indigo-600"  />              
                         <div>
                             <h5 className="font-bold text-lg mb-[2px]">
                                Location
@@ -85,7 +79,7 @@ function ContactMe() {
                                     iran - sari
                                     <span className="ml-2">
                                     {
-                                        copy3 && <FiCheckSquare color="#3dc66b"/>
+               copy3 && <span className="text-[#3dc66b] flex items-center"> <FiCheckSquare color="#3dc66b" className="mx-3" /> <span>copied!</span></span>
                                      }
                                     </span>
                                     
@@ -95,7 +89,7 @@ function ContactMe() {
                         </div>
                     </div>
                  </div>
-                <form action="/" method="get" className="col-span-3 ">
+                <form action="/" method="get" className="lg:col-span-3 col-span-5">
                     <div >
                         <div className="flex">
                             <div className="w-full md:w-1/2 px-3 ">
@@ -119,11 +113,7 @@ function ContactMe() {
                         </div>                     
                     </div>
                     <button className="bg-neutral-200">click</button>
-                </form>
-
-          
-                
-                
+                </form>   
             </div>
         </Container>
 
