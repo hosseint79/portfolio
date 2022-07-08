@@ -9,11 +9,17 @@ import {
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 import globalstyles from "./styles/global.css";
+import toaststyles from 'react-toastify/dist/ReactToastify.css'
+
 
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
     { rel: "stylesheet", href: globalstyles },
+      {
+      rel: "stylesheet",
+      href: toaststyles,
+    },
   ];
 }
 

@@ -5,9 +5,9 @@ import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { useEffect, useState } from "react";
-import { ActionFunction, redirect } from "@remix-run/node";
 import Button from "../common/Button/Button";
 import { Form, useActionData, useTransition } from "@remix-run/react";
+  import { toast } from 'react-toastify';
 
 function ContactMe() {
     // should refactor
@@ -20,11 +20,20 @@ function ContactMe() {
     console.log("a",actionData)
     useEffect(() => {
         if(actionData?.status === "success"){
-            alert("A")
+         toast("🚀 you'r message send successfuly ", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         }
     } ,[actionData])
     return (  
         <Container>
+           
             <SectionHeader title="Contact Me" caption="Get in touch"/>
             <div className=" grid gap-6 py-8 grid-cols-5  md:px-12 lg:px-16" >
                  <div className="md:col-span-2 col-span-5 flex flex-col">

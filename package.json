@@ -23,6 +23,7 @@
     "react-pretty-carousel": "^1.0.19",
     "react-spring": "^9.4.5",
     "react-spring-3d-carousel": "^1.2.1",
+    "react-toastify": "^9.0.5",
     "react-tsparticles": "^2.0.6",
     "remix-utils": "^3.3.0",
     "tiny-invariant": "^1.2.0",

@@ -1,7 +1,9 @@
 import { ActionFunction } from "@remix-run/node";
 import { lazy, ReactNode, Suspense, useEffect, useState } from "react";
 
+
 import { About } from "~/components/About/About";
+  import { ToastContainer } from 'react-toastify';
 
 
 import { ContactMe } from "~/components/ContactMe/ContactMe";
@@ -25,7 +27,17 @@ export function ClientOnly({ children }: { children: ReactNode }) {
 export default function Index() {
   return (
     <Layout>
+ 
       <div id="home">
+        <ToastContainer
+          autoClose={3000}
+          newestOnTop
+          closeOnClick
+          rtl={true}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover
+        />
         <About />
         
         <div className=" w-full bg-[#110f1c] border border-transparent ">
