@@ -4,9 +4,10 @@ import { TiLocation } from "react-icons/ti";
 import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ActionFunction, redirect } from "@remix-run/node";
 import Button from "../common/Button/Button";
+import { Form, useActionData, useTransition } from "@remix-run/react";
 
 function ContactMe() {
     // should refactor
@@ -14,7 +15,14 @@ function ContactMe() {
     const [copy2,setCopy2] = useState(false)
     const [copy3,setCopy3] = useState(false)
 
-    
+    const actionData = useActionData();
+    const transition = useTransition();
+    console.log("a",actionData)
+    useEffect(() => {
+        if(actionData?.status === "success"){
+            alert("A")
+        }
+    } ,[actionData])
     return (  
         <Container>
             <SectionHeader title="Contact Me" caption="Get in touch"/>
@@ -90,7 +98,7 @@ function ContactMe() {
                         </div>
                     </div>
                  </div>
-                <form  className="lg:col-span-3 col-span-5">
+                <Form method="post" className="lg:col-span-3 col-span-5">
                     <div >
                         <div className="flex">
                             <div className="w-full md:w-1/2 px-3 ">
@@ -113,12 +121,12 @@ function ContactMe() {
                             <textarea name="message" className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
                         </div>    
                         <div className="flex justify-end px-3 mt-5">
-                        <Button text="send message"/>               
+                        <Button text="send message" isLoading={transition.state === "loading"}/>               
 
                         </div>   
                     </div>
                     
-                </form>   
+                </Form>   
             </div>
         </Container>
 
@@ -126,4 +134,5 @@ function ContactMe() {
 }
 
 export  {ContactMe};
+
 
