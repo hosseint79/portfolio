@@ -681,6 +681,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -699,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-auto {
@@ -1114,6 +1126,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[6px\] {
+  font-size: 6px;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+
+.text-\[6rem\] {
+  font-size: 6rem;
+}
+
+.text-\[4rem\] {
+  font-size: 4rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1265,6 +1297,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:top-0 {
     top: 0px;
   }
@@ -1296,6 +1332,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .md\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:h-full {
@@ -1345,5 +1389,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-11 {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
+  }
+
+  .md\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .md\:text-\[5\.3rem\] {
+    font-size: 5.3rem;
+  }
+
+  .md\:text-\[5\.8rem\] {
+    font-size: 5.8rem;
+  }
+
+  .md\:text-\[6\.2rem\] {
+    font-size: 6.2rem;
+  }
+
+  .md\:text-\[7rem\] {
+    font-size: 7rem;
+  }
+
+  .md\:text-\[7\.4rem\] {
+    font-size: 7.4rem;
+  }
+
+  .md\:text-\[7\.5rem\] {
+    font-size: 7.5rem;
+  }
+
+  .md\:text-\[7\.2rem\] {
+    font-size: 7.2rem;
   }
 }
