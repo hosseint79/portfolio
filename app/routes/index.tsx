@@ -31,14 +31,14 @@ export default function Index() {
           <Skills />
           <ContactMe />
          
-            {/* <ClientOnly>
+         <ClientOnly>
             <Suspense fallback="">
               <TdCarousel />
             </Suspense>
           </ClientOnly>
-          
+         
              
-          <Footer /> */}
+          <Footer /> 
         </div>
       </div>
     </Layout>

@@ -19,7 +19,22 @@ video {
 }
 
 .threeD-carousel-button > div:nth-child(2) {
-  margin-top: 65px;
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.threeD-carousel-button > div:nth-child(2) > img {
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .threeD-carousel-button > div:nth-child(2) {
+    margin-top: 65px;
+    top: 0px;
+  }
+  .threeD-carousel-button > div:nth-child(2) > img {
+    height: 50px;
+  }
 }
 
 @keyframes star {

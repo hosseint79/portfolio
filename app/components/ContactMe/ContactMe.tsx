@@ -6,6 +6,7 @@ import { SectionHeader } from "../common/SectionHeader/SectionHeader";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { useState } from "react";
 import { ActionFunction, redirect } from "@remix-run/node";
+import Button from "../common/Button/Button";
 
 function ContactMe() {
     // should refactor
@@ -89,7 +90,7 @@ function ContactMe() {
                         </div>
                     </div>
                  </div>
-                <form action="/" method="get" className="lg:col-span-3 col-span-5">
+                <form  className="lg:col-span-3 col-span-5">
                     <div >
                         <div className="flex">
                             <div className="w-full md:w-1/2 px-3 ">
@@ -110,9 +111,13 @@ function ContactMe() {
                                 message
                             </label>
                             <textarea name="message" className="h-52 appearance-none block w-full bg-[#211D35] text-gray-400 rounded p-3 px-4 leading-tight focus:outline-none focus:bg-[#312d42c8] border-[#211D35] border-2 focus:border-[#443d6c]" id="grid-last-name"  placeholder="message" />
-                        </div>                     
+                        </div>    
+                        <div className="flex justify-end px-3 mt-5">
+                        <Button text="send message"/>               
+
+                        </div>   
                     </div>
-                    <button className="bg-neutral-200">click</button>
+                    
                 </form>   
             </div>
         </Container>
@@ -122,16 +127,3 @@ function ContactMe() {
 
 export  {ContactMe};
 
-
-export const action: ActionFunction = async ({ request }) => {
-  const formData = await request.formData();
-
-  const name = formData.get("name");
-  const number = formData.get("number");
-
-    console.log(name)
-    console.log(number)
-
-
-  return redirect(`/`);
-}
