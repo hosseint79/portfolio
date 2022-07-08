@@ -32,8 +32,8 @@ let slides = [
 ];
 function TdCarousel() {
      return (
-        
-        <Container>
+        <div id="projects">
+    <Container>
             <SectionHeader title="Projects" caption="Some of my projects"/>
             <div className="px-4 md:px-16 threeD-carousel-button" style={{ height: "400px", margin: "0 auto" }} >
                 <Carousel
@@ -45,6 +45,8 @@ function TdCarousel() {
                 />          
             </div>
         </Container>
+        </div>
+    
 
     ); 
 }

@@ -5,7 +5,7 @@ import { SkillsContainer } from "./SkillsContainer/SkillsContainer";
 
 function Skills() {
     return ( 
-        <section className="w-full my-6">
+        <section className="w-full my-6" id="skills">
             <SectionHeader title="Skills" caption="My technical level"/>
             <Container>
                 <ShortInfo />
