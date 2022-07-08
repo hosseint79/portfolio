@@ -6,7 +6,7 @@ interface IProps{
 
 function Container({children}:IProps) {
     return (  
-         <div className="container m-auto px-16">
+         <div className="container m-auto px-4 sm:px-10 md:px-16">
             {children}
          </div>
     );

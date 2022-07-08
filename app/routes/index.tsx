@@ -27,9 +27,9 @@ export default function Index() {
       <div id="home">
         <About />
         
-        {/* <div className=" w-full bg-[#110f1c] border border-transparent ">
+        <div className=" w-full bg-[#110f1c] border border-transparent ">
           <Skills />
-          <ContactMe />
+          {/* <ContactMe />
          
             <ClientOnly>
             <Suspense fallback="">
@@ -38,8 +38,8 @@ export default function Index() {
           </ClientOnly>
           
              
-          <Footer />
-        </div> */}
+          <Footer /> */}
+        </div>
       </div>
     </Layout>
   );
