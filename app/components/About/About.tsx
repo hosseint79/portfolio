@@ -38,8 +38,7 @@ const About = () => {
             style={{ fontFamily: "monospace", fontStyle: "italic" }}
             className="w-full z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-5 md:px-11"
           >
-            I'm a front-end developer located in iran. I love to create simple
-            yet beautiful websites with great user experience.
+            I'm a front-end developer located in iran. I love to create beautiful websites with great user experience.
             <br /> <br />
             I'm interested in the whole frontend stack Like trying new things
             and building great projects. 
