@@ -39,7 +39,7 @@ const About = () => {
           >
             Talented and experienced{" "}
             <Typewriter
-              onInit={(typewriter) => {
+              onInit={(typewriter:any) => {
                 typewriter
                   .changeDelay(100)
                   .typeString("Front-end Developer")

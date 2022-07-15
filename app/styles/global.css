@@ -10,6 +10,7 @@ html {
 .cvBtn:hover .cvBtnAnimation {
   display: block;
   animation: star 3.3s linear infinite;
+
 }
 
 img,
