@@ -1,7 +1,7 @@
 import { Link } from "@remix-run/react";
 import { BsMouse } from "react-icons/bs";
 import Particles from "react-tsparticles";
-
+import Typewriter from "typewriter-effect";
 
 import { loadFull } from "tsparticles";
 import { particleConfig } from "~/lib/configs/particlesjs-config";
@@ -12,14 +12,13 @@ const About = () => {
     await loadFull(main);
   };
 
-
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative flex  flex-col md:flex-row">
       <Particles
         style={{ position: "absolute" }}
         id="tsparticles"
         init={particlesInit}
-        options={{...particleConfig}}
+        options={{ ...particleConfig }}
       />
 
       <div className=" w-full md:p-8 md:w-4/6 z-10 flex justify-end items-center order-2 md:order-1 ">
@@ -38,18 +37,32 @@ const About = () => {
             style={{ fontFamily: "monospace", fontStyle: "italic" }}
             className="w-full z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-5 md:px-11"
           >
-            I'm a front-end developer located in iran. I love to create beautiful websites with great user experience.
+            Talented and experienced{" "}
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .changeDelay(100)
+                  .typeString("Front-end Developer")
+                  .pauseFor(500)
+                  .deleteAll(2)
+                  .changeDelay(100)
+                  .typeString("with <b>+4</b> years of experience")
+                  .start();
+              }}
+            />{" "}
+            executing with a plethora of diverse skills.
             <br /> <br />
-            I'm interested in the whole frontend stack Like trying new things
-            and building great projects. 
-            <br /> <br />I believe everything is an Art when you put your
-            consciousness in it. You can connect with me via social links.
-            <div className="flex mt-5 justify-end">
-              <CvButton text="Download Cv"/>
+            Equipped with a record of success in consistently identifying and
+            providing the technological needs of companies through ingenious
+            innovation.
+            <br /> <br />
+            Proficient in developing and creating user interfaces, writing and
+            testing codes, troubleshooting simple/complex issues, and
+            implementing new features based on user feedback.
+            <div className="flex mt-6 justify-end">
+              <CvButton text="Download Cv" />
             </div>
           </div>
-
-          
         </main>
       </div>
       <div className="w-full md:w-2/6 flex justify-center items-center z-10 order-1 md:order-2 ">
@@ -68,7 +81,6 @@ const About = () => {
         <BsMouse className="ml-2 rotate-90" />
         <span className="h-[3px] w-6 border border-white mx-3"> </span>
       </a>
-      
     </div>
   );
 };

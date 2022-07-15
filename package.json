@@ -30,6 +30,7 @@
     "remix-utils": "^3.3.0",
     "tiny-invariant": "^1.2.0",
     "tsparticles": "^2.0.6",
+    "typewriter-effect": "^2.19.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
