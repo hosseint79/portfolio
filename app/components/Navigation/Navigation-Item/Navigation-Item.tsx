@@ -7,7 +7,7 @@ interface PropsType {
   go:string
 }
 
-const NavigationItem: FC<PropsType> = ({ Icon ,go}) => {
+const NavigationItem: FC<PropsType> = ({ Icon , go}) => {
   return (
     <Link to={"#" + go}>
       <Icon

@@ -5,9 +5,9 @@ import { FiFigma, FiMail, FiPackage } from "react-icons/fi";
 
 const Navigation = () => {
   return (
-    <div className=" md:h-full md:w-auto w-full z-50 fixed bottom-0 md:top-0  md:left-8  flex items-center">
+    <div className=" lg:h-full lg:w-auto w-full z-50 fixed bottom-0 lg:top-0  lg:left-8  flex items-center">
       <div
-        className="w-screen  md:mx-6 flex-row h-10 md:h-auto md:w-10 justify-between bg-zinc-800 opacity-60 z-50  p-4 box-content  md:rounded-[35px] flex items-center md:flex-col "
+        className="w-screen  lg:mx-6 flex-row h-10 lg:h-auto lg:w-10 justify-around bg-zinc-800 opacity-90 z-50  p-4 box-content  lg:rounded-[35px] flex items-center lg:flex-col "
       >
         <NavigationItem Icon={AiOutlineHome} go="about"/>
         <NavigationItem Icon={FiPackage} go="skills"/>
