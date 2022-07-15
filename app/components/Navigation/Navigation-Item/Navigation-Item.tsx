@@ -4,10 +4,10 @@ import { IconType } from "react-icons";
 
 interface PropsType {
   Icon: IconType;
-  go:string
+  go: string;
 }
 
-const NavigationItem: FC<PropsType> = ({ Icon , go}) => {
+const NavigationItem: FC<PropsType> = ({ Icon, go }) => {
   return (
     <Link to={"#" + go}>
       <Icon
