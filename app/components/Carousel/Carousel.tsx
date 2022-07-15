@@ -8,7 +8,25 @@ let slides = [
    {
     key: 11,
     content: <a href="https://erp.sabak.org/" target="__blank" className="relative group">
-      <div className="absolute top-0 left-0 rounded-md w-full h-full bg-gray-900 duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-90"></div>
+      <div className="absolute top-0 left-0 rounded-md w-full h-full bg-gray-900 duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-90">
+        <div className="flex p-8 justify-around flex-wrap">
+          <div className="m-5">
+            <img src="/images/icons/react.svg"/>
+          </div>
+          <div className="m-5">
+              <img src="/images/icons/react.svg"/>
+          </div>
+          <div className="m-5">
+                <img src="/images/icons/react.svg"/>
+          </div>
+          <div className="m-5">
+                    <img src="/images/icons/react.svg"/>
+          </div>
+          <div className="m-5">
+                  <img src="/images/icons/react.svg"/>
+          </div>
+        </div>
+      </div>
       <img className="h-[210px] sm:h-[240px] md:h-[350px]" src="/images/works/work1.png" alt="1" style={{borderRadius:"10px",boxShadow:"0 0px 10px 3px #564f7f"}} />
     </a>
   },
