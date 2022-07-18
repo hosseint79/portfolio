@@ -28,36 +28,6 @@ const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
               key={item.id}
             />
           ))}
-          {/* <div className="flex w-1/2 items-center group-hover:animate-moveInRight">
-            <img src="/images/icons/react.png" className="w-14 h-14" />
-            <span className="text-gray-50 text-[2rem] font-bold ml-2">
-              React
-            </span>
-          </div>
-          <div className="flex w-1/2 group-hover:animate-moveInLeft">
-            <SiRedux size={56} color="#17d6d7" />
-            <span className="text-gray-50 text-[2rem] font-bold ml-2">
-              Redux
-            </span>
-          </div>
-          <div className="flex w-1/2 group-hover:animate-moveInLeft my-10">
-            <img src="/images/icons/sass.png" className="w-14 h-14" />
-            <span className="text-gray-50 text-[2rem] font-bold ml-4">
-              Sass
-            </span>
-          </div>
-          <div className="flex w-1/2 group-hover:animate-moveInRight my-10">
-            <img src="/images/icons/typescript.png" className="w-14 h-14" />
-            <span className="text-gray-50 text-[2rem] font-bold ml-4">
-              Typescript
-            </span>
-          </div>
-          <div className="flex w-1/2 group-hover:animate-moveInUp">
-            <img src="/images/icons/bootstrap.png" className="w-14 h-14" />
-            <span className="text-gray-50 text-[2rem] font-bold ml-4">
-              Bootstrap
-            </span>
-          </div> */}
         </div>
       </div>
       <img
