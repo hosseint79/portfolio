@@ -53,9 +53,29 @@ function SkillsContainer() {
           <SkillItem title="Typescript" percentageer={70} />
         </div>
         <div className="md:w-1/2">
-          <SkillItem title="HTML" percentageer={60} />
+          <SkillItem title="HTML" percentageer={90} />
         </div>
       </div>
+
+     
+      <div className="my-8 md:gap-16 gap-10 md:px-16 flex flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <SkillItem title="Sass" percentageer={80} />
+        </div>
+        <div className="md:w-1/2">
+          <SkillItem title="Remix" percentageer={60} />
+        </div>
+      </div> 
+
+      <div className="my-8 md:gap-16 gap-10 md:px-16 flex flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <SkillItem title="Styled components" percentageer={70} />
+        </div>
+        <div className="md:w-1/2">
+          <SkillItem title="Webpack" percentageer={60} />
+        </div>
+      </div> 
+
     </div>
   );
 }

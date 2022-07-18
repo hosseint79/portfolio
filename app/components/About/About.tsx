@@ -37,19 +37,22 @@ const About = () => {
             style={{ fontFamily: "monospace", fontStyle: "italic" }}
             className="w-full z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-5 md:px-11"
           >
+            <span className="text-cyan-800 text-2xl font-bold italic">
+              <Typewriter
+              
+                onInit={(typewriter:any) => {
+                  typewriter
+                    .changeDelay(100)
+                    .typeString("I'm Hossein Talebi")
+                    .start();
+                }}
+              />
+            
+            </span>
+
             Talented and experienced{" "}
-            <Typewriter
-              onInit={(typewriter:any) => {
-                typewriter
-                  .changeDelay(100)
-                  .typeString("Front-end Developer")
-                  .pauseFor(500)
-                  .deleteAll(2)
-                  .changeDelay(100)
-                  .typeString("with <b>+4</b> years of experience")
-                  .start();
-              }}
-            />{" "}
+
+            Front-end Developer with <b>+4</b> years of experience
             executing with a plethora of diverse skills.
             <br /> <br />
             Equipped with a record of success in consistently identifying and
