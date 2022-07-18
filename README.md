@@ -1,8 +1,11 @@
-# Welcome to Remix!
 
-- [Remix Docs](https://remix.run/docs)
+# Portfolio
+Portfolio developed and build with React (v17.0.2), TypeScript (v4.4.2) and Remix. For Styles, Tailwind is used . We are excited to share this portfolio with you and look forward to hearing your feedback on our Linkedin's accounts 
 
-## Development
+https://www.linkedin.com/in/sobhan-yazdanjoo-8325a01a4
+https://www.linkedin.com/in/hossein-talebi-9755731a6
+
+## Getting started
 
 From your terminal:
 
@@ -12,42 +15,28 @@ npm run dev
 
 This starts your app in development mode, rebuilding assets on file changes.
 
-## Deployment
 
-First, build your app for production:
 
-```sh
-npm run build
-```
+## Demo
 
-Then run the app in production mode:
+portfolio-xi-red-86.vercel.app
 
-```sh
-npm start
-```
+![My image](https://raw.githubusercontent.com/hosseint79/portfolio/master/public/images/portfolio-demo.png)
 
-Now you'll need to pick a host to deploy it to.
 
-### DIY
+## Features
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+- Remix
+- Tailwind CSS
+- Typescript
+- Fully Responsive
 
-Make sure to deploy the output of `remix build`
 
-- `build/`
-- `public/build/`
 
-### Using a Template
+# Would you mind supporting me?
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+* Star GitHub repo
+* Create pull requests, submit bugs, suggest new features or documentation updates.
 
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+
+
