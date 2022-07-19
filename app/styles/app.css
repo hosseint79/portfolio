@@ -1082,6 +1082,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1203,6 +1213,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#BBB9C2\] {
   --tw-text-opacity: 1;
   color: rgb(187 185 194 / var(--tw-text-opacity));
+}
+
+.text-\[\#A9ADC1\] {
+  --tw-text-opacity: 1;
+  color: rgb(169 173 193 / var(--tw-text-opacity));
 }
 
 .underline {

@@ -132,10 +132,11 @@ ol {
 }
 
 .post-body pre {
-  background: #f4f4f4;
-  padding: 20px;
-  margin: 20px 0;
+  background: #011627;
+  padding: 40px 35px;
+  margin: 25px 0;
   line-height: 2.3;
+  border-radius: 8px;
 }
 
 @media (max-width: 500px) {

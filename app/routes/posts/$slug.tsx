@@ -37,16 +37,19 @@ export default function PostSlug() {
   const {content,frontmatter,status} = useLoaderData();
 
   return (
-    <article className="container mx-auto">
-      <div className='card card-page'>
-        <h1 className='post-title'>{frontmatter.title}</h1>
-        <div className='post-date'>Posted on {frontmatter.date}</div>
-        <img src={frontmatter.cover_image} alt='' />
-        <div className='post-body'>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+    <main className="bg-[#110f1c] min-h-screen">
+      <article className="container mx-auto text-[#A9ADC1] py-16 px-8">
+        <div className=''>
+          <h1 className=''>{frontmatter.title}</h1>
+          <div className=''>Posted on {frontmatter.date}</div>
+          <img src={frontmatter.cover_image} alt='' />
+          <div className='post-body'>
+            <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </main>
+   
 
   );
 }
