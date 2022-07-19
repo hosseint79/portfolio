@@ -100,3 +100,46 @@ video {
     top: -6px;
   }
 }
+
+
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-page {
+  padding: 15px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+}
+
+.post-body ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}

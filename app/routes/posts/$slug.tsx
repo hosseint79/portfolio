@@ -2,19 +2,51 @@ import { json } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import invariant from "tiny-invariant";
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { marked } from "marked";
+
 
 export const loader: LoaderFunction = async ({ params }) => {
-  invariant(params.slug, `params.slug is required`);
-  return json({
-    name: params.slug,
-  });
+
+  try {
+      const markdownWithMeta = fs.readFileSync(
+        path.join('app/posts', params.slug + '.md'),
+        'utf-8'
+      )
+
+        const { data: frontmatter, content } = matter(markdownWithMeta)
+        console.log(frontmatter  // return {
+      )
+
+    return json({
+      frontmatter,
+      content,
+      status:"success"
+    });
+  } catch (error) {
+        return json({
+
+          status:"error"
+        });
+  }
 };
 
 export default function PostSlug() {
-  const { name } = useLoaderData();
+  const {content,frontmatter,status} = useLoaderData();
+
   return (
-    <main className="mx-auto max-w-4xl">
-      <h1 className="my-6 border-b-2 text-center text-3xl">Some Post {name}</h1>
-    </main>
+    <article className="container mx-auto">
+      <div className='card card-page'>
+        <h1 className='post-title'>{frontmatter.title}</h1>
+        <div className='post-date'>Posted on {frontmatter.date}</div>
+        <img src={frontmatter.cover_image} alt='' />
+        <div className='post-body'>
+          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        </div>
+      </div>
+    </article>
+
   );
 }
