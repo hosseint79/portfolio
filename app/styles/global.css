@@ -20,7 +20,7 @@ video {
 
 .threeD-carousel-button > div:nth-child(2) {
   position: relative;
-  top: -40px;
+  top: -10px;
   display: flex;
   justify-content: center;
 }
@@ -32,11 +32,8 @@ video {
 }
 @media screen and (min-width: 768px) {
   .threeD-carousel-button > div:nth-child(2) {
-    margin-top: 105px;
+    margin-top: 85px;
     top: 0px;
-  }
-  .threeD-carousel-button > div:nth-child(2) > img {
-    height: 80px;
   }
 }
 

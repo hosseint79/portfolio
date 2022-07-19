@@ -645,6 +645,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.25rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -771,6 +781,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[260px\] {
   height: 260px;
+}
+
+.h-\[240px\] {
+  height: 240px;
 }
 
 .min-h-screen {
@@ -1433,6 +1447,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 4rem;
   }
 
+  .md\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
   .md\:mb-36 {
     margin-bottom: 9rem;
   }
@@ -1526,6 +1550,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
