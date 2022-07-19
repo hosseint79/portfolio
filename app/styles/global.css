@@ -25,15 +25,18 @@ video {
   justify-content: center;
 }
 .threeD-carousel-button > div:nth-child(2) > img {
-  height: 60px;
+  height: 85px;
+  width: 60px;
+  cursor: pointer;
+  padding: 12px;
 }
 @media screen and (min-width: 768px) {
   .threeD-carousel-button > div:nth-child(2) {
-    margin-top: 65px;
+    margin-top: 105px;
     top: 0px;
   }
   .threeD-carousel-button > div:nth-child(2) > img {
-    height: 50px;
+    height: 80px;
   }
 }
 
