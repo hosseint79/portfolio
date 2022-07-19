@@ -31,7 +31,7 @@ const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
         </div>
       </div>
       <img
-        className="h-[210px] sm:h-[240px] md:h-[350px]"
+        className="h-[160px] sm:h-[240px] md:h-[350px]"
         src={image}
         alt="1"
         style={{
