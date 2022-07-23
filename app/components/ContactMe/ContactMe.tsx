@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Button from "../common/Button/Button";
 import { Form, useActionData, useTransition } from "@remix-run/react";
 import { toast } from "react-toastify";
+import { CopiedNotification } from "./CopiedNotification/CopiedNotification";
 
 function ContactMe() {
   // should refactor
@@ -49,14 +50,7 @@ function ContactMe() {
                     09397233907
                     <span className="ml-2">
                       {copy1 && (
-                        <span className="text-[#3dc66b] flex items-center">
-                          {" "}
-                          <FiCheckSquare
-                            color="#3dc66b"
-                            className="mx-3"
-                          />{" "}
-                          <span>Copied!</span>
-                        </span>
+                       <CopiedNotification />
                       )}
                     </span>
                   </h6>
