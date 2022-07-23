@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React,{ FC } from "react";
 import { SiRedux } from "react-icons/si";
 import CarouselItem from "./CarouselItem.tsx/CarouselItem";
 

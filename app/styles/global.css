@@ -30,6 +30,7 @@ video {
   cursor: pointer;
   padding: 12px;
 }
+
 @media screen and (min-width: 768px) {
   .threeD-carousel-button > div:nth-child(2) {
     margin-top: 85px;
@@ -102,3 +103,11 @@ video {
 }
 
 
+/* article styles */
+.post-body pre{
+  background: #011627;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

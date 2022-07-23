@@ -1,3 +1,5 @@
+import React from "react";
+
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import { Container } from "../common/Container/Container";

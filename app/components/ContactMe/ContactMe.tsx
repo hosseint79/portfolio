@@ -6,8 +6,8 @@ import { useEffect } from "react";
 import Button from "../common/Button/Button";
 import { Form, useActionData, useTransition } from "@remix-run/react";
 import { toast } from "react-toastify";
-import { ContactMeItem } from "./ContactMeItem/ContactMeItem";
 import { FiPhone } from "react-icons/fi";
+import { ContactMeItem } from "./CopiedNotification/ContactMeItem";
 
 function ContactMe() {
 

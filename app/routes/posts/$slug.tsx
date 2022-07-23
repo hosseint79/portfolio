@@ -1,12 +1,22 @@
 import { json } from "@remix-run/node";
 import type { LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import invariant from "tiny-invariant";
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from "marked";
+import hljs from "highlight.js";
+import { ReactNode, useEffect, useState } from "react";
+import javascript from 'highlight.js/lib/languages/javascript';
 
+marked.setOptions({
+  langPrefix: "hljs language-",
+  highlight: function(code) {
+    hljs.registerLanguage('javascript', javascript);
+    return hljs.highlightAuto(code, ["html", "javascript"]).value;
+  },
+  
+});
 
 export const loader: LoaderFunction = async ({ params }) => {
 
@@ -32,7 +42,13 @@ export const loader: LoaderFunction = async ({ params }) => {
         });
   }
 };
-
+export function ClientOnly({ children }: { children: ReactNode }) {
+  let [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  return mounted ? <>{children}</> : null;
+}
 export default function PostSlug() {
   const {content,frontmatter,status} = useLoaderData();
 
@@ -45,6 +61,7 @@ export default function PostSlug() {
           <img src={frontmatter.cover_image} alt='' />
           <div className='post-body'>
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+
           </div>
         </div>
       </article>
