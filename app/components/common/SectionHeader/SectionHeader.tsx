@@ -17,37 +17,38 @@ const spanVariants = {
 };
 
 function SectionHeader({ title, caption }: IProps) {
-  const controls = useAnimation();
-  const controls2 = useAnimation();
+  const controlsTop = useAnimation();
+  const controlsBottom = useAnimation();
 
   const [ref, inView] = useInView();
   const [ref2, inView2] = useInView();
+
   useEffect(() => {
     if (inView) {
-      controls.start("visible");
+      controlsTop.start("visible");
     }
     if (inView2) {
-      controls2.start("visible");
+      controlsBottom.start("visible");
     }
-  }, [controls, inView, controls2, inView2]);
+  }, [controlsTop, inView, controlsBottom, inView2]);
 
   return (
-    <div className="text-center pt-3 pb-6 text-white my-14">
+    <div className="text-center pt-3 pb-6 text-white my-7 md:my-14">
       <motion.h2
         ref={ref}
-        animate={controls}
+        animate={controlsTop}
         initial="hidden"
         variants={hOneVariants}
-        className="my-3 text-3xl font-semibold"
+        className="my-1 md:my-3 text-xl md:text-3xl font-semibold"
       >
         {title}
       </motion.h2>
       <motion.span
         ref={ref2}
-        animate={controls2}
+        animate={controlsBottom}
         initial="hidden"
         variants={spanVariants}
-        className="my-3 text-3xl font-semibold"
+        className="my-1 md:my-3 text-2xl md:text-3xl font-semibold"
       >
         {caption}
       </motion.span>

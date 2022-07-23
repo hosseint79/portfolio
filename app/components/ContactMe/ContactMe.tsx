@@ -1,23 +1,19 @@
 import { AiOutlineMail } from "react-icons/ai";
-import { FiCheckSquare, FiPhone } from "react-icons/fi";
 import { TiLocation } from "react-icons/ti";
 import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Button from "../common/Button/Button";
 import { Form, useActionData, useTransition } from "@remix-run/react";
 import { toast } from "react-toastify";
+import { ContactMeItem } from "./ContactMeItem/ContactMeItem";
+import { FiPhone } from "react-icons/fi";
 
 function ContactMe() {
-  // should refactor
-  const [copy1, setCopy1] = useState(false);
-  const [copy2, setCopy2] = useState(false);
-  const [copy3, setCopy3] = useState(false);
 
   const actionData = useActionData();
   const transition = useTransition();
-  console.log("a", actionData);
+
   useEffect(() => {
     if (actionData?.status === "success") {
       toast("🚀 Your message sent successfuly ", {
@@ -31,94 +27,23 @@ function ContactMe() {
       });
     }
   }, [actionData]);
+
+
   return (
     <div id="contact">
       <Container>
         <SectionHeader title="Contact Me" caption="Get in touch" />
         <div className=" grid gap-6 py-8 grid-cols-5  md:px-12 lg:px-16">
           <div className="md:col-span-2 col-span-5 flex flex-col">
-            <div className="flex items-center text-white mb-6">
-              <FiPhone size={30} className="mx-4 text-indigo-600" />
-              <div>
-                <h5 className="font-bold text-lg mb-[2px]">Call Me</h5>
-                <CopyToClipboard
-                  text="09397233907"
-                  onCopy={() => setCopy1(true)}
-                >
-                  <h6 className="flex items-center cursor-pointer">
-                    09397233907
-                    <span className="ml-2">
-                      {copy1 && (
-                        <span className="text-[#3dc66b] flex items-center">
-                          {" "}
-                          <FiCheckSquare
-                            color="#3dc66b"
-                            className="mx-3"
-                          />{" "}
-                          <span>Copied!</span>
-                        </span>
-                      )}
-                    </span>
-                  </h6>
-                </CopyToClipboard>
-              </div>
-            </div>
-            <div className="flex items-center text-white mb-6">
-              <AiOutlineMail
+            
+            <ContactMeItem icon={<FiPhone size={30} className="mx-4 text-indigo-600" />} title="Call Me" text="09397233907"/>
+            <ContactMeItem icon={ <AiOutlineMail
                 style={{ fontSize: "30px" }}
                 className="mx-4 text-indigo-600"
-              />
-              <div>
-                <h5 className="font-bold text-lg mb-[2px]">Email</h5>
-                <CopyToClipboard
-                  text="hossein.w7979@gmail.com"
-                  onCopy={() => setCopy2(true)}
-                >
-                  <h6 className="flex items-center cursor-pointer">
-                    hossein.w7979@gmail.com
-                    <span className="ml-2">
-                      {copy2 && (
-                        <span className="text-[#3dc66b] flex items-center">
-                          {" "}
-                          <FiCheckSquare
-                            color="#3dc66b"
-                            className="mx-3"
-                          />{" "}
-                          <span>Copied!</span>
-                        </span>
-                      )}
-                    </span>
-                  </h6>
-                </CopyToClipboard>
-              </div>
-            </div>
-            <div className="flex items-center text-white mb-6">
-              <TiLocation size={33} className="mx-4 text-indigo-600" />
-              <div>
-                <h5 className="font-bold text-lg mb-[2px]">Location</h5>
-
-                <CopyToClipboard
-                  text="iran - sari"
-                  onCopy={() => setCopy3(true)}
-                >
-                  <h6 className="flex items-center cursor-pointer">
-                    Iran - Sari
-                    <span className="ml-2">
-                      {copy3 && (
-                        <span className="text-[#3dc66b] flex items-center">
-                          {" "}
-                          <FiCheckSquare
-                            color="#3dc66b"
-                            className="mx-3"
-                          />{" "}
-                          <span>Copied!</span>
-                        </span>
-                      )}
-                    </span>
-                  </h6>
-                </CopyToClipboard>
-              </div>
-            </div>
+              />} title="Email" text=" hossein.w7979@gmail.com"/>
+            <ContactMeItem icon={ <TiLocation size={33} className="mx-4 text-indigo-600" />} title="Location" text="Iran - Sari"/>
+           
+   
           </div>
           <Form method="post" className="lg:col-span-3 col-span-5">
             <div>

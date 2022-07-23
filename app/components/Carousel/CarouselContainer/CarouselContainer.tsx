@@ -18,7 +18,7 @@ interface IPropsType {
 const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
   return (
     <a href={url} target="__blank" className="relative group">
-      <div className="absolute top-0 left-0 rounded-md w-full h-full bg-gray-900 duration-300 opacity-0 invisible group-hover:visible group-hover:opacity-90">
+      <div className="absolute top-0 left-0 rounded-md w-full h-full bg-gray-900 duration-300 opacity-0 invisible md:group-hover:visible group-hover:opacity-90">
         <div className="flex p-8 justify-around flex-wrap">
           {listItems.map((item) => (
             <CarouselItem
@@ -31,7 +31,7 @@ const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
         </div>
       </div>
       <img
-        className="h-[210px] sm:h-[240px] md:h-[350px]"
+        className="h-[160px] sm:h-[240px] md:h-[350px]"
         src={image}
         alt="1"
         style={{

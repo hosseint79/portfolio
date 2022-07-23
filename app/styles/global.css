@@ -20,20 +20,20 @@ video {
 
 .threeD-carousel-button > div:nth-child(2) {
   position: relative;
-  top: -40px;
+  top: -10px;
   display: flex;
   justify-content: center;
 }
 .threeD-carousel-button > div:nth-child(2) > img {
-  height: 60px;
+  height: 85px;
+  width: 60px;
+  cursor: pointer;
+  padding: 12px;
 }
 @media screen and (min-width: 768px) {
   .threeD-carousel-button > div:nth-child(2) {
-    margin-top: 65px;
+    margin-top: 85px;
     top: 0px;
-  }
-  .threeD-carousel-button > div:nth-child(2) > img {
-    height: 50px;
   }
 }
 
@@ -102,45 +102,3 @@ video {
 }
 
 
-
-.card {
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-page {
-  padding: 15px 30px;
-}
-
-.post-title {
-  margin: 10px 0;
-}
-
-.post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
-}
-
-.post-body ul,
-ol {
-  font-size: 110%;
-  line-height: 2.3;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.post-body pre {
-  background: #011627;
-  padding: 40px 35px;
-  margin: 25px 0;
-  line-height: 2.3;
-  border-radius: 8px;
-}
-
-@media (max-width: 500px) {
-  .posts {
-    grid-template-columns: 1fr;
-  }
-}

@@ -163,8 +163,8 @@ function TdCarousel() {
       <Container>
         <SectionHeader title="Projects" caption="Some of my projects" />
         <div
-          className="px-4 md:px-16 threeD-carousel-button"
-          style={{ height: "400px", margin: "0 auto" }}
+          className="px-4 md:px-16 threeD-carousel-button h-[240px] md:h-[400px]"
+          
         >
           <Carousel
             slides={slides}
