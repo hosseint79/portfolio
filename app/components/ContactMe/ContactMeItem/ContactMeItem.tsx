@@ -1,25 +1,36 @@
-import { useState } from "react";
+import React, { FC, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { FiCheckSquare, FiPhone } from "react-icons/fi";
 
-const ContactMeItem = () => {
+interface IProps{
+  icon:React.ReactNode;
+  title:string;
+  text:string;
+}
+
+const ContactMeItem:FC<IProps> = ({icon,text,title}) => {
     const [copyDuration,setCopyDuration] = useState(false)
     return (
             <div className="flex items-center text-white mb-6">
-              <FiPhone size={30} className="mx-4 text-indigo-600" />
+              
+              {
+                icon
+              }
                <div className="my-2">
-                <h5 className="font-bold text-lg mb-[2px]">Call Me</h5>
+                <h5 className="font-bold text-lg mb-[2px]">{title} </h5>
                 <CopyToClipboard
                   text="09397233907"
                   onCopy={() => {
-                    setCopyDuration(true)
-                    setTimeout(() => {
-                      setCopyDuration(false)
-                    },2000)
+                    if(!copyDuration){
+                      setCopyDuration(true)
+                      setTimeout(() => {
+                        setCopyDuration(false)
+                      },2000)
+                    }
                   }}
                 >
                   <h6 className="flex items-center cursor-pointer">
-                    09397233907
+                    {text}
                     <span className="ml-2 h-9">
                       {copyDuration && (
                         <span className="text-[#3dc66b] flex flex-col ml-3 ">
