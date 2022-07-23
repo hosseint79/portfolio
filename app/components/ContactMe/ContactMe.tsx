@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import Button from "../common/Button/Button";
 import { Form, useActionData, useTransition } from "@remix-run/react";
 import { toast } from "react-toastify";
-import { CopiedNotification } from "./CopiedNotification/CopiedNotification";
+import { ContactMeItem } from "./ContactMeItem/ContactMeItem";
 
 function ContactMe() {
   // should refactor
@@ -38,25 +38,7 @@ function ContactMe() {
         <SectionHeader title="Contact Me" caption="Get in touch" />
         <div className=" grid gap-6 py-8 grid-cols-5  md:px-12 lg:px-16">
           <div className="md:col-span-2 col-span-5 flex flex-col">
-            <div className="flex items-center text-white mb-6">
-              <FiPhone size={30} className="mx-4 text-indigo-600" />
-              <div>
-                <h5 className="font-bold text-lg mb-[2px]">Call Me</h5>
-                <CopyToClipboard
-                  text="09397233907"
-                  onCopy={() => setCopy1(true)}
-                >
-                  <h6 className="flex items-center cursor-pointer">
-                    09397233907
-                    <span className="ml-2">
-                      {copy1 && (
-                       <CopiedNotification />
-                      )}
-                    </span>
-                  </h6>
-                </CopyToClipboard>
-              </div>
-            </div>
+            <ContactMeItem />
             <div className="flex items-center text-white mb-6">
               <AiOutlineMail
                 style={{ fontSize: "30px" }}

@@ -48,12 +48,21 @@ module.exports = {
             transform: "translateX(0)",
           },
         },
+        copiedAnimation:{
+          "0%": {
+            width:"100%"
+          },
+          "100%": {
+             width:"0"
+          },
+        }
       },
       animation: {
         wiggle: "wiggle 3.2s ease-in-out infinite",
         moveInUp: "moveInUp 0.8s ease-in-out",
         moveInLeft: "moveInLeft 0.8s ease-in-out",
         moveInRight: "moveInRight 0.8s ease-in-out",
+        copiedAnimation: "copiedAnimation 2s linear forwards",     
       },
     },
   },
