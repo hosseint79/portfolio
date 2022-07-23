@@ -51,14 +51,15 @@ export function ClientOnly({ children }: { children: ReactNode }) {
 }
 export default function PostSlug() {
   const {content,frontmatter,status} = useLoaderData();
-
+  const src = frontmatter?.cover_image.split("public")
+  console.log(src)
   return (
-    <main className="bg-[#110f1c] min-h-screen">
+    <main className="bg-[#110f1c] min-h-screen" style={{direction:"rtl"}}>
       <article className="container mx-auto text-[#A9ADC1] py-16 px-8">
         <div className=''>
-          <h1 className=''>{frontmatter.title}</h1>
-          <div className=''>Posted on {frontmatter.date}</div>
-          <img src={frontmatter.cover_image} alt='' />
+          <h1 className='text-white text-lg mb-1'>{frontmatter?.title}</h1>
+          <div className='mb-2'> تاریخ  : {frontmatter?.date} </div>
+          <img src={frontmatter?.cover_image} alt='' />
           <div className='post-body'>
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 

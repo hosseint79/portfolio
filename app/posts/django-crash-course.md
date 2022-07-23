@@ -1,59 +1,31 @@
 ---
-title: 'Django Crash Course'
-date: 'March 5, 2021'
-excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+title: 'ده تا از کاربردی ترین های در برنامه نویسی ری اکت '
+date: '1401/11/21'
+excerpt: 'مهمترین موارد '
 cover_image: '/images/posts/img3.jpg'
 ---
 
-Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
-haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
-manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
-verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
-pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
-in.
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
-1. Serrae enim Etruscam aquis
-2. Et premis et flumine frontem minatur oppressos
-3. Inquam rector Icarus possum vim tumulo propiusque
-4. Vulnus se Latreus
-5. Aptumque bis
+__این قراربزرگ باشد__
 
-## Turpius Aegides membris colat volentes fallere
+![This is a alt text.](/images/blog-image.jpg "This is a sample image.")
 
-Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
-consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
-Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
-procul fugitque corpora iugales!
 
-    let i = 100
-    for(let j = 0; j < i; j++){
-        console.log("s")
-        return <div> salam </div>
-    }
-    
 
-## O contra diu
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 
-Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
-premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
-sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
-nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
-rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
 
-Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
-aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
-sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
-oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+```
+let TdCarousel = lazy(() => import("~/components/Carousel/Carousel"));
 
-Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
-_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
-quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
-respice humum vobis oscula, in Lotis nymphae.
 
-Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
-Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
-capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
-ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
-visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
-porrigar **patriam** Alcmene: attonitas.
+export function ClientOnly({ children }: { children: ReactNode }) {
+  let [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  return mounted ? <>{children}</> : null;
+}
+
+```
