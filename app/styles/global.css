@@ -19,8 +19,8 @@ video {
 }
 
 .threeD-carousel-button > div:nth-child(2) {
-  position: relative;
-  top: -10px;
+  /* position: relative; */
+  position: unset;
   display: flex;
   justify-content: center;
 }
@@ -29,6 +29,20 @@ video {
   width: 60px;
   cursor: pointer;
   padding: 12px;
+  overflow: hidden;
+
+}
+.threeD-carousel-button > div:nth-child(2) > img:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%,-50%);
+}
+.threeD-carousel-button > div:nth-child(2) > img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(50%,-50%);
 }
 
 @media screen and (min-width: 768px) {

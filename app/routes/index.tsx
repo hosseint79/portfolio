@@ -9,6 +9,7 @@ import { ContactMe } from "~/components/ContactMe/ContactMe";
 import { Footer } from "~/components/Footer/Footer";
 import { Layout } from "~/components/Layout/Layout";
 import {Skills} from "~/components/Skills/Skills";
+import { PostsList } from "~/components/PostsList/PostsList";
 
 
 
@@ -48,7 +49,7 @@ export default function Index() {
               <TdCarousel />
             </Suspense>
           </ClientOnly>
-         
+          <PostsList />
              
           <Footer /> 
         </div>
