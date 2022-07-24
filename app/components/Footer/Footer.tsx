@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className=" py-8 text-white mt-32 md:mt-64 flex flex-col  items-center text-xl font-light"
+      className=" py-8 text-white mt-32  flex flex-col  items-center text-xl font-light"
     >
       <span className="my-5">That's all</span>
       <a href="#home">
