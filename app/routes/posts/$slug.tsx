@@ -8,6 +8,7 @@ import { marked } from "marked";
 import hljs from "highlight.js";
 import { ReactNode, useEffect, useState } from "react";
 import javascript from 'highlight.js/lib/languages/javascript';
+import { Footer } from "~/components/Footer/Footer";
 
 marked.setOptions({
   langPrefix: "hljs language-",
@@ -54,19 +55,25 @@ export default function PostSlug() {
   const src = frontmatter?.cover_image.split("public")
   console.log(src)
   return (
-    <main className="bg-[#110f1c] min-h-screen" style={{direction:"rtl"}}>
-      <article className="container mx-auto text-[#A9ADC1] py-16 px-8">
+    <>
+        <main className="bg-[#110f1c] min-h-screen" style={{direction:"rtl"}}>
+      <article className="container mx-auto text-[#b4b8cb] py-16 px-8">
         <div className=''>
-          <h1 className='text-white text-lg mb-1'>{frontmatter?.title}</h1>
-          <div className='mb-2'> تاریخ  : {frontmatter?.date} </div>
-          <img src={frontmatter?.cover_image} alt='' />
+     
+          <img src={frontmatter?.cover_image} alt='' className="h-auto w-full mt-12 mb-16 rounded-lg inline-block" />
+               <h1 className='text-white text-xl font-bold mb-2'>{frontmatter?.title}</h1>
+          <div className='mb-2 font-bold text-sm text-[#A9ADC1] '> تاریخ  : {frontmatter?.date} </div>
           <div className='post-body'>
             <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
 
           </div>
         </div>
       </article>
+       <Footer />
     </main>
+   
+    </>
+
    
 
   );
