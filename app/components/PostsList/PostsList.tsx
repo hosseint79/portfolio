@@ -27,10 +27,10 @@ const PostsList = () => {
       
         <Container>
             <SectionHeader caption="See some articles" title="Articles"/>
-            <div className="w-full  mt-24 mb-12 flex gap-10 ">
+            <div className="w-full mt-24 mb-12 flex gap-10 flex-wrap md:flex-none">
                 {
                     data.map((item) => {
-                        return <Link to="/posts/django-crash-course" className="block w-1/3 relative top-5 duration-300 transition-all hover:top-0">
+                        return <Link to="/posts/django-crash-course" className="block md:w-1/3 relative top-5 duration-300 transition-all hover:top-0 w-full">
                         <div className=" w-full group relative text-white cursor-pointer ">
                                     <img className="w-full h-52 rounded-lg " src={item.image}/>
                                     <div className="w-full h-52 rounded-lg absolute top-0 left-0 group-hover:bg-[#3830a3c2] opacity-0 invisible group-hover:visible group-hover:opacity-100
