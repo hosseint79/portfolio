@@ -1,5 +1,5 @@
-import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
 
 type post = {
   slug: string;

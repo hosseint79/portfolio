@@ -4,10 +4,18 @@ import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import { Container } from "../common/Container/Container";
 import { SectionHeader } from "../common/SectionHeader/SectionHeader";
-import { SiCss3, SiLeaflet, SiMaterialui, SiNextdotjs, SiRedux, SiTypescript } from "react-icons/si";
-import {DiReact} from "react-icons/di"
+import {
+  SiCss3,
+  SiLeaflet,
+  SiMaterialui,
+  SiNextdotjs,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
+import { DiReact } from "react-icons/di";
 import CarouselContainer from "./CarouselContainer/CarouselContainer";
 import { BsFillBootstrapFill } from "react-icons/bs";
+import { ResponsiveCarousel } from "../ResponsiveCarousel/ResponsiveCarousel";
 
 export const slides = [
   {
@@ -34,7 +42,7 @@ export const slides = [
             icon: <BsFillBootstrapFill size={52} color="#17d6d7" />,
             text: "Bootstrap",
             id: "2",
-          },     
+          },
           {
             animation: "moveInLeft",
             icon: <SiTypescript size={52} color="#17d6d7" />,
@@ -52,8 +60,7 @@ export const slides = [
             icon: <SiLeaflet size={52} color="#17d6d7" />,
             text: "Leaflet",
             id: "2",
-          },               
-          
+          },
         ]}
       />
     ),
@@ -82,7 +89,7 @@ export const slides = [
             icon: <SiNextdotjs size={52} color="#17d6d7" />,
             text: "Next js",
             id: "2",
-          },     
+          },
           {
             animation: "moveInLeft",
             icon: <SiTypescript size={52} color="#17d6d7" />,
@@ -100,8 +107,7 @@ export const slides = [
             icon: <SiMaterialui size={52} color="#17d6d7" />,
             text: "Material Ui",
             id: "2",
-          },               
-          
+          },
         ]}
       />
     ),
@@ -110,7 +116,7 @@ export const slides = [
   {
     key: 22,
     content: (
-           <CarouselContainer
+      <CarouselContainer
         url="https://zeemind.ir/"
         image="/images/works/work2.png"
         listItems={[
@@ -131,7 +137,7 @@ export const slides = [
             icon: <SiNextdotjs size={52} color="#17d6d7" />,
             text: "Next js",
             id: "2",
-          },     
+          },
           {
             animation: "moveInLeft",
             icon: <SiTypescript size={52} color="#17d6d7" />,
@@ -149,29 +155,31 @@ export const slides = [
             icon: <SiMaterialui size={52} color="#17d6d7" />,
             text: "Material Ui",
             id: "2",
-          },               
-          
+          },
         ]}
       />
-
     ),
   },
 ];
-
 
 function TdCarousel() {
   return (
     <div id="projects" className="overflow-hidden">
       <Container>
         <SectionHeader title="Projects" caption="Some of my projects" />
-        <div className="px-4 md:px-16 threeD-carousel-button h-[240px] md:h-[400px] relative">
-          <Carousel
-            slides={slides}
-            goToSlide={1}
-            offsetRadius={2}
-            showNavigation={true}
-            animationConfig={config.gentle}
-          />
+        <div>
+          <div className="block lg:hidden">
+            <ResponsiveCarousel />
+          </div>
+          <div className="px-4 md:px-16 threeD-carousel-button h-[240px] md:h-[400px] relative hidden lg:block ">
+            <Carousel
+              slides={slides}
+              goToSlide={1}
+              offsetRadius={2}
+              showNavigation={true}
+              animationConfig={config.gentle}
+            />
+          </div>
         </div>
       </Container>
     </div>

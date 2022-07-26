@@ -1,20 +1,14 @@
 import { lazy, ReactNode, Suspense, useEffect, useState } from "react";
-
-
-import { About } from "~/components/About/About";
-  import { ToastContainer } from 'react-toastify';
-
-
 import { ContactMe } from "~/components/ContactMe/ContactMe";
+import { PostsList } from "~/components/PostsList/PostsList";
 import { Footer } from "~/components/Footer/Footer";
 import { Layout } from "~/components/Layout/Layout";
-import {Skills} from "~/components/Skills/Skills";
-import { PostsList } from "~/components/PostsList/PostsList";
-
-
+import { Skills } from "~/components/Skills/Skills";
+import { About } from "~/components/About/About";
+import { ToastContainer } from "react-toastify";
+import { ResponsiveCarousel } from "~/components/ResponsiveCarousel/ResponsiveCarousel";
 
 let TdCarousel = lazy(() => import("~/components/Carousel/Carousel"));
-
 
 export function ClientOnly({ children }: { children: ReactNode }) {
   let [mounted, setMounted] = useState(false);
@@ -27,7 +21,6 @@ export function ClientOnly({ children }: { children: ReactNode }) {
 export default function Index() {
   return (
     <Layout>
- 
       <div id="home">
         <ToastContainer
           autoClose={3000}
@@ -39,22 +32,21 @@ export default function Index() {
           pauseOnHover
         />
         <About />
-        
+
         <div className=" w-full bg-[#110f1c] border border-transparent ">
           <Skills />
           <ContactMe />
-         
-         <ClientOnly>
+
+          <ClientOnly>
             <Suspense fallback="">
               <TdCarousel />
             </Suspense>
           </ClientOnly>
           <PostsList />
-             
-          <Footer /> 
+
+          <Footer />
         </div>
       </div>
     </Layout>
   );
 }
-

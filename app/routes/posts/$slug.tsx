@@ -1,14 +1,14 @@
-import { json } from "@remix-run/node";
+import javascript from "highlight.js/lib/languages/javascript";
+import { ReactNode, useEffect, useState } from "react";
 import type { LoaderFunction } from "@remix-run/node";
+import { Footer } from "~/components/Footer/Footer";
 import { useLoaderData } from "@remix-run/react";
-import fs from "fs";
-import path from "path";
+import { json } from "@remix-run/node";
 import matter from "gray-matter";
 import { marked } from "marked";
 import hljs from "highlight.js";
-import { ReactNode, useEffect, useState } from "react";
-import javascript from "highlight.js/lib/languages/javascript";
-import { Footer } from "~/components/Footer/Footer";
+import path from "path";
+import fs from "fs";
 
 marked.setOptions({
   langPrefix: "hljs language-",
