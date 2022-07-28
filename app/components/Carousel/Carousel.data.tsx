@@ -6,9 +6,9 @@ import {
   SiRedux,
   SiTypescript,
 } from 'react-icons/si'
-import {DiReact} from 'react-icons/di'
+import { DiReact } from 'react-icons/di'
 import CarouselContainer from './CarouselContainer/CarouselContainer'
-import {BsFillBootstrapFill} from 'react-icons/bs'
+import { BsFillBootstrapFill } from 'react-icons/bs'
 
 export const slides = [
   {

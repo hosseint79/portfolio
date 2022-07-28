@@ -1,16 +1,16 @@
-import {lazy, ReactNode, Suspense, useEffect, useState} from 'react'
-import {ContactMe} from '~/components/ContactMe/ContactMe'
-import {PostsList} from '~/components/PostsList/PostsList'
-import {Footer} from '~/components/Footer/Footer'
-import {Layout} from '~/components/Layout/Layout'
-import {Skills} from '~/components/Skills/Skills'
-import {About} from '~/components/About/About'
-import {ToastContainer} from 'react-toastify'
-import {ResponsiveCarousel} from '~/components/ResponsiveCarousel/ResponsiveCarousel'
+import { lazy, ReactNode, Suspense, useEffect, useState } from 'react'
+import { ContactMe } from '~/components/ContactMe/ContactMe'
+import { PostsList } from '~/components/PostsList/PostsList'
+import { Footer } from '~/components/Footer/Footer'
+import { Layout } from '~/components/Layout/Layout'
+import { Skills } from '~/components/Skills/Skills'
+import { About } from '~/components/About/About'
+import { ToastContainer } from 'react-toastify'
+import { ResponsiveCarousel } from '~/components/ResponsiveCarousel/ResponsiveCarousel'
 
 let TdCarousel = lazy(() => import('~/components/Carousel/Carousel'))
 
-export function ClientOnly({children}: {children: ReactNode}) {
+export function ClientOnly({ children }: { children: ReactNode }) {
   let [mounted, setMounted] = useState(false)
   useEffect(() => {
     setMounted(true)
@@ -33,7 +33,7 @@ export default function Index() {
         />
         <About />
 
-        <div className=" w-full bg-[#110f1c] border border-transparent ">
+        <div className=" w-full border border-transparent bg-[#110f1c] ">
           <Skills />
           <ContactMe />
 

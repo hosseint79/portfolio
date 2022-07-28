@@ -3,21 +3,21 @@ interface IProps {
   title: string
 }
 
-function SkillItem({percentageer, title}: IProps) {
+function SkillItem({ percentageer, title }: IProps) {
   return (
     <div>
-      <div className="flex justify-between mb-3">
-        <span className="text-white text-xl font-semibold"> {title} </span>
+      <div className="mb-3 flex justify-between">
+        <span className="text-xl font-semibold text-white"> {title} </span>
         {/* <span className="text-[#BBB9C2]"> {percentageer}%</span> */}
       </div>
-      <div className="bg-violet-300 w-full h-2 rounded">
+      <div className="h-2 w-full rounded bg-violet-300">
         <div
-          className="bg-indigo-800 h-full rounded-tl rounded-bl"
-          style={{width: percentageer + '%'}}
+          className="h-full rounded-tl rounded-bl bg-indigo-800"
+          style={{ width: percentageer + '%' }}
         ></div>
       </div>
     </div>
   )
 }
 
-export {SkillItem}
+export { SkillItem }

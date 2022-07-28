@@ -1,5 +1,5 @@
-import {Link, useLoaderData} from '@remix-run/react'
-import {json} from '@remix-run/node'
+import { Link, useLoaderData } from '@remix-run/react'
+import { json } from '@remix-run/node'
 
 type post = {
   slug: string
@@ -27,7 +27,7 @@ export const loader = async () => {
 }
 
 export default function Posts() {
-  const {posts} = useLoaderData<LoaderDataType>()
+  const { posts } = useLoaderData<LoaderDataType>()
   console.log(posts)
   return (
     <>

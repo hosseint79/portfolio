@@ -1,9 +1,9 @@
-import {useAnimation, motion} from 'framer-motion'
-import {useInView} from 'react-intersection-observer'
-import {AiOutlineMail} from 'react-icons/ai'
-import {BsLinkedin, BsWhatsapp} from 'react-icons/bs'
-import {TiSocialGithub} from 'react-icons/ti'
-import {useEffect} from 'react'
+import { useAnimation, motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsLinkedin, BsWhatsapp } from 'react-icons/bs'
+import { TiSocialGithub } from 'react-icons/ti'
+import { useEffect } from 'react'
 
 interface IProps {
   duration: number
@@ -12,10 +12,10 @@ interface IProps {
   hoverBg: string
 }
 
-function SocialItem({duration, href, Icon, hoverBg}: IProps) {
+function SocialItem({ duration, href, Icon, hoverBg }: IProps) {
   const squareVariants = {
-    visible: {opacity: 1, y: 0, transition: {duration: duration}},
-    hidden: {opacity: 0, y: 20},
+    visible: { opacity: 1, y: 0, transition: { duration: duration } },
+    hidden: { opacity: 0, y: 20 },
   }
 
   const controls = useAnimation()
@@ -32,7 +32,7 @@ function SocialItem({duration, href, Icon, hoverBg}: IProps) {
       initial="hidden"
       variants={squareVariants}
       className={
-        'p-1 w-16 h-16 flex items-center justify-center mx-1 bg-[#0b172f87] duration-500 rounded-full ' +
+        'mx-1 flex h-16 w-16 items-center justify-center rounded-full bg-[#0b172f87] p-1 duration-500 ' +
         hoverBg
       }
     >
@@ -46,7 +46,7 @@ function SocialItem({duration, href, Icon, hoverBg}: IProps) {
 
 function SocialMedia() {
   return (
-    <div className="flex my-14">
+    <div className="my-14 flex">
       <SocialItem
         duration={0.7}
         hoverBg="hover:bg-slate-600"
@@ -75,4 +75,4 @@ function SocialMedia() {
   )
 }
 
-export {SocialMedia}
+export { SocialMedia }

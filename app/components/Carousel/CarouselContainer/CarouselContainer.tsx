@@ -1,5 +1,5 @@
-import React, {FC} from 'react'
-import {SiRedux} from 'react-icons/si'
+import React, { FC } from 'react'
+import { SiRedux } from 'react-icons/si'
 import CarouselItem from './CarouselItem.tsx/CarouselItem'
 
 interface Item {
@@ -15,11 +15,11 @@ interface IPropsType {
   listItems: Item[]
 }
 
-const CarouselContainer: FC<IPropsType> = ({url, image, listItems}) => {
+const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
   return (
-    <a href={url} target="__blank" className="relative group">
-      <div className="absolute top-0 left-0 rounded-md w-full h-full bg-gray-900 duration-300 opacity-0 invisible md:group-hover:visible group-hover:opacity-90">
-        <div className="flex p-8 justify-around flex-wrap">
+    <a href={url} target="__blank" className="group relative">
+      <div className="invisible absolute top-0 left-0 h-full w-full rounded-md bg-gray-900 opacity-0 duration-300 group-hover:opacity-90 md:group-hover:visible">
+        <div className="flex flex-wrap justify-around p-8">
           {listItems.map(item => (
             <CarouselItem
               animation={item.animation}

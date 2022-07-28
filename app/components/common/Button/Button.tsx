@@ -2,18 +2,18 @@ interface IPropsType {
   text: string
   isLoading: boolean
 }
-function Button({text, isLoading}: IPropsType) {
+function Button({ text, isLoading }: IPropsType) {
   return (
     <button
       type="submit"
-      className="px-7 py-3 rounded-md bg-[#211D35] duration-300 hover:bg-[#201d2b] text-white"
+      className="rounded-md bg-[#211D35] px-7 py-3 text-white duration-300 hover:bg-[#201d2b]"
     >
       {isLoading ? (
         <span className="flex items-center">
           loading ...{' '}
           <svg
             role="status"
-            className="w-4 h-4 mt-1 mx-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            className="mx-2 mt-1 h-4 w-4 animate-spin fill-blue-600 text-gray-200 dark:text-gray-600"
             viewBox="0 0 100 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

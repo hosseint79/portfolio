@@ -1,6 +1,6 @@
-import React, {FC, useState} from 'react'
+import React, { FC, useState } from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard'
-import {FiCheckSquare, FiPhone} from 'react-icons/fi'
+import { FiCheckSquare, FiPhone } from 'react-icons/fi'
 
 interface IProps {
   icon: React.ReactNode
@@ -8,13 +8,13 @@ interface IProps {
   text: string
 }
 
-const ContactMeItem: FC<IProps> = ({icon, text, title}) => {
+const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
   const [copyDuration, setCopyDuration] = useState(false)
   return (
-    <div className="flex items-center text-white mb-6">
+    <div className="mb-6 flex items-center text-white">
       {icon}
       <div className="my-2">
-        <h5 className="font-bold text-lg mb-[2px]">{title} </h5>
+        <h5 className="mb-[2px] text-lg font-bold">{title} </h5>
         <CopyToClipboard
           text="09397233907"
           onCopy={() => {
@@ -26,18 +26,18 @@ const ContactMeItem: FC<IProps> = ({icon, text, title}) => {
             }
           }}
         >
-          <h6 className="flex items-center cursor-pointer">
+          <h6 className="flex cursor-pointer items-center">
             {text}
             <span className="ml-2 h-9">
               {copyDuration && (
-                <span className="text-[#3dc66b] flex flex-col ml-3 ">
+                <span className="ml-3 flex flex-col text-[#3dc66b] ">
                   <div className="flex items-center">
                     <FiCheckSquare color="#3dc66b" className="mr-3" />
                     <span>Copied!</span>
                   </div>
 
                   <span
-                    className={`h-[2px] mt-1 w-0 bg-emerald-700 ${
+                    className={`mt-1 h-[2px] w-0 bg-emerald-700 ${
                       copyDuration ? 'animate-copiedAnimation' : ''
                     }`}
                   />
@@ -51,4 +51,4 @@ const ContactMeItem: FC<IProps> = ({icon, text, title}) => {
   )
 }
 
-export {ContactMeItem}
+export { ContactMeItem }

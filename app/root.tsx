@@ -1,4 +1,4 @@
-import type {MetaFunction} from '@remix-run/node'
+import type { MetaFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -14,9 +14,9 @@ import highlight from 'highlight.js/styles/base16/harmonic16-dark.css'
 
 export function links() {
   return [
-    {rel: 'stylesheet', href: styles},
-    {rel: 'stylesheet', href: highlight},
-    {rel: 'stylesheet', href: globalstyles},
+    { rel: 'stylesheet', href: styles },
+    { rel: 'stylesheet', href: highlight },
+    { rel: 'stylesheet', href: globalstyles },
     {
       rel: 'stylesheet',
       href: toaststyles,
