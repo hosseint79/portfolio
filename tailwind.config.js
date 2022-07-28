@@ -16,7 +16,7 @@ module.exports = {
         moveInRight: {
           '0%': {
             // opacity: 0,
-            transform: ' translateX(-100px)',
+            transform: ' translateX(-70px)',
           },
           '80%': {
             // opacity: 0.8,
@@ -30,11 +30,11 @@ module.exports = {
         moveInLeft: {
           '0%': {
             opacity: 0,
-            transform: 'translateX(10rem)',
+            transform: 'translateX(70px)',
           },
           '80%': {
             opacity: 0.8,
-            transform: 'translateX(-2rem)',
+            transform: 'translateX(-20px)',
           },
           '100%': {
             opacity: 1,
@@ -45,7 +45,7 @@ module.exports = {
         moveInUp: {
           '0%': {
             opacity: 0,
-            transform: 'translateY(10rem)',
+            transform: 'translateY(50px)',
           },
           '100%': {
             opacity: 1,
