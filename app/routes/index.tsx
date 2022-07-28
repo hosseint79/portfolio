@@ -6,7 +6,6 @@ import { Layout } from '~/components/Layout/Layout'
 import { Skills } from '~/components/Skills/Skills'
 import { About } from '~/components/About/About'
 import { ToastContainer } from 'react-toastify'
-import { ResponsiveCarousel } from '~/components/ResponsiveCarousel/ResponsiveCarousel'
 
 let TdCarousel = lazy(() => import('~/components/Carousel/Carousel'))
 

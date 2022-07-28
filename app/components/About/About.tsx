@@ -24,11 +24,9 @@ const About = () => {
       <div className=" z-10 order-2 flex w-full items-center justify-end md:order-1 md:w-4/6 md:p-8 ">
         <main className=" relative mx-4 w-full md:w-5/6">
           <h1
-            className="-top-20 -left-16 z-0 text-[4rem] font-semibold md:absolute md:text-[7.2rem]"
+            className="-top-20 -left-16 z-0 text-[4rem] font-semibold  text-[rgba(243,240,240,0.32)] md:absolute md:text-[7.2rem] md:text-[rgba(243,240,240,0.13)]"
             style={{
               fontFamily: 'sans-serif',
-              //fontSize: "",
-              color: 'rgba(252,246,244,0.1)',
             }}
           >
             ABOUT

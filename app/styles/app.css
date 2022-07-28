@@ -1372,6 +1372,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
+.text-\[rgba\(252\2c 246\2c 244\2c 0\.1\)\] {
+  color: rgba(252, 246, 244, 0.1);
+}
+
+.text-\[rgba\(235\2c 232\2c 231\2c 0\.1\)\] {
+  color: rgba(235, 232, 231, 0.1);
+}
+
+.text-\[rgba\(243\2c 240\2c 240\2c 0\.1\)\] {
+  color: rgba(243, 240, 240, 0.1);
+}
+
+.text-\[rgba\(243\2c 240\2c 240\2c 0\.32\)\] {
+  color: rgba(243, 240, 240, 0.32);
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
@@ -1655,6 +1671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-\[rgba\(243\2c 240\2c 240\2c 0\.1\)\] {
+    color: rgba(243, 240, 240, 0.1);
+  }
+
+  .md\:text-\[rgba\(243\2c 240\2c 240\2c 0\.13\)\] {
+    color: rgba(243, 240, 240, 0.13);
   }
 
   .md\:hover\:scale-105:hover {
