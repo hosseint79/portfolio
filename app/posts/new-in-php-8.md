@@ -1,7 +1,9 @@
 ---
 title: "What's New In PHP 8?"
 date: 'March 7, 2021'
-excerpt: 'In this article we will look at some of the new features offered in version 8 of PHP'
+excerpt:
+        'In this article we will look at some of the new features offered in
+        version 8 of PHP'
 cover_image: '/images/posts/img4.jpg'
 ---
 
@@ -64,7 +66,7 @@ plenissima ita tangit cum nisi.
             andCopy.intellectual_so_iteration.cross(moduleReadme, programming +
             broadband);
 
-Mirantia deique sacerdos, opus, at [generis eandem
-planamque](http://www.potentia.net/lapis). Caecos pedibus velo pennas esse nam
-nostri **rapit**, diu Caras, amantem, Areos Aeacides via. Ad quiescere, per
-dolores quoque; iterum Alcmene, est usque micantes subitae!
+Mirantia deique sacerdos, opus, at
+[generis eandem planamque](http://www.potentia.net/lapis). Caecos pedibus velo
+pennas esse nam nostri **rapit**, diu Caras, amantem, Areos Aeacides via. Ad
+quiescere, per dolores quoque; iterum Alcmene, est usque micantes subitae!

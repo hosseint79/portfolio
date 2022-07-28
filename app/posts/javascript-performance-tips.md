@@ -1,7 +1,9 @@
 ---
 title: 'JavaScript Performance Tips'
 date: 'March 4, 2021'
-excerpt: 'We will look at 10 simple tips and tricks to increase the speed of your code when writing JS'
+excerpt:
+        'We will look at 10 simple tips and tricks to increase the speed of your
+        code when writing JS'
 cover_image: '/images/posts/img1.jpg'
 ---
 
@@ -20,9 +22,9 @@ bis.
 Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
 pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique
 animorum ac! Quem sit. Venit qui, rex sibi tota, peto _fortis ira suis_ dolusque
-simulatque [incipit crudelesque
-pavens](http://www.corpora.com/terrae-oscula.html) spatiosa conlegit oscula
-equam.
+simulatque
+[incipit crudelesque pavens](http://www.corpora.com/terrae-oscula.html) spatiosa
+conlegit oscula equam.
 
 ## Mensis idem
 
