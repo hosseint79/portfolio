@@ -1,5 +1,4 @@
-
-export const particleConfig:any = {
+export const particleConfig: any = {
   autoPlay: true,
 
   fullScreen: {
@@ -11,16 +10,16 @@ export const particleConfig:any = {
   duration: 0,
   fpsLimit: 120,
   interactivity: {
-    detectsOn: "window",
+    detectsOn: 'window',
     events: {
       onClick: {
         enable: true,
-        mode: "repulse",
+        mode: 'repulse',
       },
 
       onHover: {
         enable: true,
-        mode: "connect",
+        mode: 'connect',
         parallax: {
           enable: false,
           force: 60,
@@ -73,17 +72,17 @@ export const particleConfig:any = {
         area: {
           gradient: {
             start: {
-              value: "#ffffff",
+              value: '#ffffff',
             },
             stop: {
-              value: "#000000",
+              value: '#000000',
             },
           },
           radius: 1000,
         },
         shadow: {
           color: {
-            value: "#000000",
+            value: '#000000',
           },
           length: 2000,
         },
@@ -157,14 +156,14 @@ export const particleConfig:any = {
         },
       },
       enable: false,
-      mode: "bounce",
+      mode: 'bounce',
       overlap: {
         enable: true,
         retries: 0,
       },
     },
     color: {
-      value: "#ffffff",
+      value: '#ffffff',
       animation: {
         h: {
           count: 0,
@@ -236,7 +235,7 @@ export const particleConfig:any = {
     links: {
       blink: false,
       color: {
-        value: "#ffffff",
+        value: '#ffffff',
       },
       consent: false,
       distance: 150,
@@ -246,7 +245,7 @@ export const particleConfig:any = {
       shadow: {
         blur: 5,
         color: {
-          value: "#000",
+          value: '#000',
         },
         enable: false,
       },
@@ -277,7 +276,7 @@ export const particleConfig:any = {
       },
       decay: 0,
       distance: {},
-      direction: "none",
+      direction: 'none',
       drift: 0,
       enable: true,
       gravity: {
@@ -299,11 +298,11 @@ export const particleConfig:any = {
         options: {},
       },
       outModes: {
-        default: "out",
-        bottom: "out",
-        left: "out",
-        right: "out",
-        top: "out",
+        default: 'out',
+        bottom: 'out',
+        left: 'out',
+        right: 'out',
+        top: 'out',
       },
       random: true,
       size: false,
@@ -317,7 +316,7 @@ export const particleConfig:any = {
         enable: false,
         length: 10,
         fillColor: {
-          value: "#000000",
+          value: '#000000',
         },
       },
       vibrate: false,
@@ -346,8 +345,8 @@ export const particleConfig:any = {
         enable: true,
         speed: 1,
         sync: false,
-        destroy: "none",
-        startValue: "random",
+        destroy: 'none',
+        startValue: 'random',
         minimumValue: 0,
       },
     },
@@ -392,7 +391,7 @@ export const particleConfig:any = {
         enable: false,
         value: 0,
       },
-      mode: "vertical",
+      mode: 'vertical',
       speed: 25,
     },
     rotate: {
@@ -406,13 +405,13 @@ export const particleConfig:any = {
         speed: 0,
         sync: false,
       },
-      direction: "clockwise",
+      direction: 'clockwise',
       path: false,
     },
     shadow: {
       blur: 0,
       color: {
-        value: "#000",
+        value: '#000',
       },
       enable: false,
       offset: {
@@ -422,7 +421,7 @@ export const particleConfig:any = {
     },
     shape: {
       options: {},
-      type: "circle",
+      type: 'circle',
     },
     size: {
       random: {
@@ -438,8 +437,8 @@ export const particleConfig:any = {
         enable: false,
         speed: 4,
         sync: false,
-        destroy: "none",
-        startValue: "random",
+        destroy: 'none',
+        startValue: 'random',
         minimumValue: 0.3,
       },
     },
@@ -457,7 +456,7 @@ export const particleConfig:any = {
         speed: 0,
         sync: false,
       },
-      direction: "clockwise",
+      direction: 'clockwise',
       enable: false,
     },
     twinkle: {

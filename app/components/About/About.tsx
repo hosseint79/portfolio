@@ -1,59 +1,55 @@
-import { Link } from "@remix-run/react";
-import { BsMouse } from "react-icons/bs";
-import Particles from "react-tsparticles";
-import Typewriter from "typewriter-effect";
+import { Link } from '@remix-run/react'
+import { BsMouse } from 'react-icons/bs'
+import Particles from 'react-tsparticles'
+import Typewriter from 'typewriter-effect'
 
-import { loadFull } from "tsparticles";
-import { particleConfig } from "~/lib/configs/particlesjs-config";
-import CvButton from "../CvButton/CvButton";
+import { loadFull } from 'tsparticles'
+import { particleConfig } from '~/lib/configs/particlesjs-config'
+import CvButton from '../CvButton/CvButton'
 
 const About = () => {
   const particlesInit = async (main: any) => {
-    await loadFull(main);
-  };
+    await loadFull(main)
+  }
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-black via-black to-[#110f1c] relative flex  flex-col md:flex-row">
+    <div className="relative flex min-h-screen w-full flex-col bg-gradient-to-b from-black via-black  to-[#110f1c] md:flex-row">
       <Particles
-        style={{ position: "absolute" }}
+        style={{ position: 'absolute' }}
         id="tsparticles"
         init={particlesInit}
         options={{ ...particleConfig }}
       />
 
-      <div className=" w-full md:p-8 md:w-4/6 z-10 flex justify-end items-center order-2 md:order-1 ">
-        <main className=" w-full mx-4 md:w-5/6 relative">
+      <div className=" z-10 order-2 flex w-full items-center justify-end md:order-1 md:w-4/6 md:p-8 ">
+        <main className=" relative mx-4 w-full md:w-5/6">
           <h1
-            className="text-[4rem] md:text-[7.2rem] z-0 md:absolute font-semibold -top-20 -left-16"
+            className="-top-20 -left-16 z-0 text-[4rem] font-semibold  text-[rgba(243,240,240,0.32)] md:absolute md:text-[7.2rem] md:text-[rgba(243,240,240,0.13)]"
             style={{
-              fontFamily: "sans-serif",
-              //fontSize: "",
-              color: "rgba(252,246,244,0.1)",
+              fontFamily: 'sans-serif',
             }}
           >
             ABOUT
           </h1>
           <div
-            style={{ fontFamily: "monospace", fontStyle: "italic" }}
-            className="w-full z-10 relative border-2 border-solid  border-white backdrop-blur-[6px] text-white text-xl py-14 px-5 md:px-11"
+            style={{
+              fontFamily: 'monospace',
+              fontStyle: 'italic',
+            }}
+            className="relative z-10 w-full border-2 border-solid  border-white py-14 px-5 text-xl text-white backdrop-blur-[6px] md:px-11"
           >
-            <span className="text-cyan-800 text-2xl font-bold italic">
+            <span className="text-2xl font-bold italic text-cyan-800">
               <Typewriter
-              
-                onInit={(typewriter:any) => {
+                onInit={(typewriter: any) => {
                   typewriter
                     .changeDelay(100)
                     .typeString("I'm Hossein Talebi")
-                    .start();
+                    .start()
                 }}
               />
-            
             </span>
-
-            Talented and experienced{" "}
-
-            Front-end Developer with <b>+4</b> years of experience
-            executing with a plethora of diverse skills.
+            Talented and experienced Front-end Developer with <b>+4</b> years of
+            experience executing with a plethora of diverse skills.
             <br /> <br />
             Equipped with a record of success in consistently identifying and
             providing the technological needs of companies through ingenious
@@ -62,29 +58,29 @@ const About = () => {
             Proficient in developing and creating user interfaces, writing and
             testing codes, troubleshooting simple/complex issues, and
             implementing new features based on user feedback.
-            <div className="flex mt-6 justify-end">
+            <div className="mt-6 flex justify-end">
               <CvButton text="Download Cv" />
             </div>
           </div>
         </main>
       </div>
-      <div className="w-full md:w-2/6 flex justify-center items-center z-10 order-1 md:order-2 ">
+      <div className="z-10 order-1 flex w-full items-center justify-center md:order-2 md:w-2/6 ">
         <img
-          className=" w-64 h-auto animate-wiggle mb-20 md:mb-36"
+          className=" mb-20 h-auto w-64 animate-wiggle md:mb-36"
           src="/images/spaceman.png"
         />
       </div>
 
       <a
         href="#footer"
-        className="md:flex items-center h-auto absolute  z-50 -right-12 bottom-28 p-4 rotate-90 text-white hidden "
+        className="absolute -right-12 bottom-28 z-50  hidden h-auto rotate-90 items-center p-4 text-white md:flex "
       >
-        <span className="h-[3px] w-6 border border-white mx-3"> </span>
+        <span className="mx-3 h-[3px] w-6 border border-white"> </span>
         <h6>SCROLL DOWN</h6>
         <BsMouse className="ml-2 rotate-90" />
-        <span className="h-[3px] w-6 border border-white mx-3"> </span>
+        <span className="mx-3 h-[3px] w-6 border border-white"> </span>
       </a>
     </div>
-  );
-};
-export { About };
+  )
+}
+export { About }

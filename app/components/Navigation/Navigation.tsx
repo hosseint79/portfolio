@@ -1,12 +1,12 @@
-import { AiOutlineHome } from "react-icons/ai";
-import { BsArrowDownCircle } from "react-icons/bs";
-import { NavigationItem } from "./Navigation-Item/Navigation-Item";
-import { FiFigma, FiMail, FiPackage } from "react-icons/fi";
+import { AiOutlineHome } from 'react-icons/ai'
+import { BsArrowDownCircle } from 'react-icons/bs'
+import { NavigationItem } from './Navigation-Item/Navigation-Item'
+import { FiFigma, FiMail, FiPackage } from 'react-icons/fi'
 
 const Navigation = () => {
   return (
-    <div className=" lg:h-full lg:w-auto w-full z-50 fixed bottom-0 lg:top-0  lg:left-8  flex items-center">
-      <div className="w-screen  lg:mr-6 flex-row h-10 lg:h-auto lg:w-10 justify-around bg-zinc-800 opacity-90 z-50  p-4 box-content  lg:rounded-[35px] flex items-center lg:flex-col ">
+    <div className=" fixed bottom-0 z-50 flex w-full items-center lg:top-0 lg:left-8 lg:h-full lg:w-auto">
+      <div className="z-50  box-content flex h-10 w-screen flex-row items-center justify-around bg-zinc-800 p-4 opacity-90 lg:mr-6 lg:h-auto lg:w-10 lg:flex-col lg:rounded-[35px]">
         <NavigationItem Icon={AiOutlineHome} go="about" />
         <NavigationItem Icon={FiPackage} go="skills" />
         <NavigationItem Icon={FiMail} go="contact" />
@@ -14,6 +14,6 @@ const Navigation = () => {
         <NavigationItem Icon={BsArrowDownCircle} go="footer" />
       </div>
     </div>
-  );
-};
-export { Navigation };
+  )
+}
+export { Navigation }

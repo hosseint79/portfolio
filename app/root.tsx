@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -6,28 +6,29 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import styles from "./styles/app.css";
-import globalstyles from "./styles/global.css";
+} from '@remix-run/react'
+import styles from './styles/app.css'
+import globalstyles from './styles/global.css'
 import toaststyles from 'react-toastify/dist/ReactToastify.css'
-
+import highlight from 'highlight.js/styles/base16/harmonic16-dark.css'
 
 export function links() {
   return [
-    { rel: "stylesheet", href: styles },
-    { rel: "stylesheet", href: globalstyles },
-      {
-      rel: "stylesheet",
+    { rel: 'stylesheet', href: styles },
+    { rel: 'stylesheet', href: highlight },
+    { rel: 'stylesheet', href: globalstyles },
+    {
+      rel: 'stylesheet',
       href: toaststyles,
     },
-  ];
+  ]
 }
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
-});
+  charset: 'utf-8',
+  title: 'Hossein',
+  viewport: 'width=device-width,initial-scale=1',
+})
 
 export default function App() {
   return (
@@ -43,5 +44,5 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }

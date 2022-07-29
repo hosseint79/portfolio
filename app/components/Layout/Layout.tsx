@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { Navigation } from "../Navigation/Navigation";
+import { FC } from 'react'
+import { Navigation } from '../Navigation/Navigation'
 
 const Layout: FC = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const Layout: FC = ({ children }) => {
       {children}
       <Navigation />
     </>
-  );
-};
+  )
+}
 
-export { Layout };
+export { Layout }
