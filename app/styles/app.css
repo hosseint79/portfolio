@@ -1346,9 +1346,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(169 173 193 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+.text-team {
+  color: var(--color-team-yellow);
 }
 
 .text-blue-600 {

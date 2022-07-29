@@ -56,13 +56,6 @@ export default function PostSlug() {
     <>
       <main className="min-h-screen bg-[#110f1c]" style={{ direction: 'rtl' }}>
         <article className="container mx-auto py-16 px-8 text-[#b4b8cb]">
-          <div className="flex h-32 w-full flex-row-reverse flex-nowrap gap-5 overflow-auto bg-slate-400">
-            {[1, 2, 3, 4, 5].map(() => {
-              return (
-                <div className="h-full w-10/12 flex-shrink-0 bg-red-600 "></div>
-              )
-            })}
-          </div>
           <div className="">
             <img
               src={frontmatter?.cover_image}

@@ -1,3 +1,7 @@
+:root {
+  --color-team-yellow: #a08600;
+}
+
 html {
   scroll-behavior: smooth !important;
 }

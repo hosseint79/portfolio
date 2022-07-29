@@ -31,7 +31,7 @@ export default function Posts() {
   console.log(posts)
   return (
     <>
-      <Link to="admin" className="text-red-600 underline">
+      <Link to="admin" className="text-team">
         Admin
       </Link>
       <ul>
