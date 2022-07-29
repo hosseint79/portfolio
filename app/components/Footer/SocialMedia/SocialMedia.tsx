@@ -63,7 +63,7 @@ function SocialMedia() {
         duration={1.3}
         hoverBg="hover:bg-blue-600"
         Icon={() => <BsLinkedin size={27} />}
-        href=""
+        href="https://www.linkedin.com/in/hossein-talebi-9755731a6"
       />
       <SocialItem
         duration={1.6}
