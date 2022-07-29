@@ -9,6 +9,7 @@ import { marked } from 'marked'
 import hljs from 'highlight.js'
 import path from 'path'
 import fs from 'fs'
+import { BlogLayout } from '~/components/Layout/BlogLayout'
 
 marked.setOptions({
   langPrefix: 'hljs language-',
@@ -53,10 +54,10 @@ export default function PostSlug() {
   const src = frontmatter?.cover_image.split('public')
   console.log(src)
   return (
-    <>
+    <BlogLayout>
       <main className="min-h-screen bg-[#110f1c]" style={{ direction: 'rtl' }}>
-        <article className="container mx-auto py-16 px-8 text-[#b4b8cb]">
-          <div className="">
+        <article className="container mx-auto py-14 px-8 text-[#b4b8cb]">
+          <div>
             <img
               src={frontmatter?.cover_image}
               alt=""
@@ -78,8 +79,7 @@ export default function PostSlug() {
             </div>
           </div>
         </article>
-        <Footer />
       </main>
-    </>
+    </BlogLayout>
   )
 }

@@ -1,11 +1,9 @@
-import { Link } from '@remix-run/react'
-import { BsMouse } from 'react-icons/bs'
-import Particles from 'react-tsparticles'
-import Typewriter from 'typewriter-effect'
-
-import { loadFull } from 'tsparticles'
 import { particleConfig } from '~/lib/configs/particlesjs-config'
 import CvButton from '../CvButton/CvButton'
+import Typewriter from 'typewriter-effect'
+import Particles from 'react-tsparticles'
+import { BsMouse } from 'react-icons/bs'
+import { loadFull } from 'tsparticles'
 
 const About = () => {
   const particlesInit = async (main: any) => {

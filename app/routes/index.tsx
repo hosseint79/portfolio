@@ -14,7 +14,7 @@ export function ClientOnly({ children }: { children: ReactNode }) {
   useEffect(() => {
     setMounted(true)
   }, [])
-  return mounted ? <>{children}</> : null
+  return mounted ? <> {children} </> : null
 }
 
 export default function Index() {
