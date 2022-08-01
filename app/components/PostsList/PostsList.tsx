@@ -35,7 +35,7 @@ const PostsList = () => {
   return (
     <Container>
       <SectionHeader caption="See some articles" title="Articles" />
-      <div className="lg:px-16- mt-24 mb-12 flex w-full flex-wrap gap-10 md:flex-nowrap md:px-12">
+      <div className="flex w-full flex-wrap gap-10 md:flex-nowrap md:gap-5 lg:gap-10 lg:px-16">
         {data.map(item => {
           return (
             <Link

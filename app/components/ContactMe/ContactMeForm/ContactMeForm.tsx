@@ -24,8 +24,8 @@ function ContactMeForm() {
   return (
     <Form method="post" className="col-span-5 lg:col-span-3">
       <div>
-        <div className="flex-col lg:flex-row">
-          <div className="lg:w-1/2 ">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-1/2">
             <label
               className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-400"
               htmlFor="grid-last-name"
@@ -40,7 +40,7 @@ function ContactMeForm() {
               placeholder="Name"
             />
           </div>
-          <div className="mt-5 lg:mt-0 lg:w-1/2">
+          <div className="mt-5 lg:ml-5 lg:mt-0 lg:w-1/2">
             <label
               className="mb-2 block text-xs font-bold uppercase tracking-wide text-gray-400"
               htmlFor="grid-last-name"

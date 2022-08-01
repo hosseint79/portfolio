@@ -5,13 +5,15 @@ import { ContactMeInformation } from './ContactMeInformation/ContactMeInformatio
 
 function ContactMe() {
   return (
-    <div id="contact">
-      <Container>
+    <Container>
+      <div id="contact" className="lg:px-16">
         <SectionHeader title="Contact Me" caption="Get in touch" />
-        <ContactMeInformation />
-        <ContactMeForm />
-      </Container>
-    </div>
+        <div className="grid grid-cols-5 gap-6">
+          <ContactMeInformation />
+          <ContactMeForm />
+        </div>
+      </div>
+    </Container>
   )
 }
 

@@ -5,6 +5,8 @@ import { useEffect } from 'react'
 interface IProps {
   title: string
   caption: string
+  mb?: string
+  mt?: string
 }
 
 const hOneVariants = {
@@ -16,7 +18,7 @@ const spanVariants = {
   hidden: { opacity: 0, y: 120 },
 }
 
-function SectionHeader({ title, caption }: IProps) {
+function SectionHeader({ title, caption, mb = 'mb-20', mt = 'mt-20' }: IProps) {
   const controlsTop = useAnimation()
   const controlsBottom = useAnimation()
 
@@ -33,7 +35,7 @@ function SectionHeader({ title, caption }: IProps) {
   }, [controlsTop, inView, controlsBottom, inView2])
 
   return (
-    <div className=" pt-3  pb-6 text-center text-white lg:my-14">
+    <div className={`text-center text-white ${mb} ${mt}`}>
       <motion.h2
         ref={ref}
         animate={controlsTop}

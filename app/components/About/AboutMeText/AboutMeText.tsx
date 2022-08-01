@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect'
 
 function AboutMeText() {
   return (
-    <div className=" z-10 order-2 flex w-full items-center justify-end p-4 md:p-6 lg:order-1 lg:w-4/6 lg:p-8 ">
+    <div className="container z-10 order-2 mx-auto flex w-full items-center justify-end p-4 md:p-6 lg:order-1 lg:w-4/6 lg:p-8 ">
       <main className=" relative w-full lg:w-5/6">
         <h1
           className="-top-20 -left-16 z-0 text-[3.5rem] font-semibold  text-[rgba(243,240,240,0.32)] lg:absolute lg:text-[7.2rem] lg:text-[rgba(243,240,240,0.13)]"
