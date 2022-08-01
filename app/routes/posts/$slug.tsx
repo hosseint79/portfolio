@@ -27,9 +27,6 @@ export const loader: LoaderFunction = async ({ params }) => {
     )
 
     const { data: frontmatter, content } = matter(markdownWithMeta)
-    console.log(
-      frontmatter, // return {
-    )
 
     const html = marked(content)
 
@@ -41,20 +38,15 @@ export const loader: LoaderFunction = async ({ params }) => {
   } catch (error) {
     return json({
       status: 'error',
+      slug: params.slug,
+      filePath: path.join('app/posts', params.slug + '.md'),
     })
   }
 }
-export function ClientOnly({ children }: { children: ReactNode }) {
-  let [mounted, setMounted] = useState(false)
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-  return mounted ? <>{children}</> : null
-}
+
 export default function PostSlug() {
   const { content, frontmatter, status } = useLoaderData()
-  const src = frontmatter?.cover_image.split('public')
-  console.log(src)
+  console.log('content', content)
   return (
     <BlogLayout>
       <main className="min-h-screen bg-[#110f1c]" style={{ direction: 'rtl' }}>

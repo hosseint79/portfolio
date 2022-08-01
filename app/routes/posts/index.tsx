@@ -28,7 +28,6 @@ export const loader = async () => {
 
 export default function Posts() {
   const { posts } = useLoaderData<LoaderDataType>()
-  console.log(posts)
   return (
     <>
       <Link to="admin" className="text-team">
