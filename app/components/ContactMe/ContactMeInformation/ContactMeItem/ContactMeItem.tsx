@@ -16,7 +16,7 @@ const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
       <div className="my-2">
         <h5 className="mb-[2px] text-lg font-bold">{title} </h5>
         <CopyToClipboard
-          text="09397233907"
+          text={title}
           onCopy={() => {
             if (!copyDuration) {
               setCopyDuration(true)
@@ -26,11 +26,11 @@ const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
             }
           }}
         >
-          <h6 className="flex cursor-pointer items-center">
+          <h6 className="flex cursor-pointer flex-wrap items-center gap-3">
             {text}
-            <span className="ml-2 h-9">
+            <span className="h-9">
               {copyDuration && (
-                <span className="ml-3 flex flex-col text-[#3dc66b] ">
+                <span className=" flex flex-col text-[#3dc66b] ">
                   <div className="flex items-center">
                     <FiCheckSquare color="#3dc66b" className="mr-3" />
                     <span>Copied!</span>

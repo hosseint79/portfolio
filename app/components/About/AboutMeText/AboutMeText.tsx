@@ -1,5 +1,5 @@
-import Typewriter from 'typewriter-effect'
 import CvButton from '~/components/CvButton/CvButton'
+import Typewriter from 'typewriter-effect'
 
 function AboutMeText() {
   return (
