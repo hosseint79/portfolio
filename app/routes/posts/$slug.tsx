@@ -1,7 +1,7 @@
 import javascript from 'highlight.js/lib/languages/javascript'
+import { BlogLayout } from '~/components/Layout/BlogLayout'
 import { ReactNode, useEffect, useState } from 'react'
 import type { LoaderFunction } from '@remix-run/node'
-import { Footer } from '~/components/Footer/Footer'
 import { useLoaderData } from '@remix-run/react'
 import { json } from '@remix-run/node'
 import matter from 'gray-matter'
@@ -49,21 +49,13 @@ export function ClientOnly({ children }: { children: ReactNode }) {
   return mounted ? <>{children}</> : null
 }
 export default function PostSlug() {
-  const { content, frontmatter, status } = useLoaderData()
-  const src = frontmatter?.cover_image.split('public')
-  console.log(src)
+  const { content, frontmatter } = useLoaderData()
+
   return (
-    <>
+    <BlogLayout>
       <main className="min-h-screen bg-[#110f1c]" style={{ direction: 'rtl' }}>
-        <article className="container mx-auto py-16 px-8 text-[#b4b8cb]">
-          <div className="flex h-32 w-full flex-row-reverse flex-nowrap gap-5 overflow-auto bg-slate-400">
-            {[1, 2, 3, 4, 5].map(() => {
-              return (
-                <div className="h-full w-10/12 flex-shrink-0 bg-red-600 "></div>
-              )
-            })}
-          </div>
-          <div className="">
+        <article className="container mx-auto py-14 px-8 text-[#b4b8cb]">
+          <div>
             <img
               src={frontmatter?.cover_image}
               alt=""
@@ -85,8 +77,7 @@ export default function PostSlug() {
             </div>
           </div>
         </article>
-        <Footer />
       </main>
-    </>
+    </BlogLayout>
   )
 }

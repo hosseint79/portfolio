@@ -68,6 +68,9 @@ module.exports = {
         moveInRight: 'moveInRight 0.8s ease-in-out',
         copiedAnimation: 'copiedAnimation 2s linear forwards',
       },
+      colors: {
+        team: 'var(--color-team-yellow)',
+      },
     },
   },
   plugins: [],

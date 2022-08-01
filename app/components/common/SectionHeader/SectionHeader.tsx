@@ -1,10 +1,12 @@
+import { useInView } from 'react-intersection-observer'
 import { useAnimation, motion } from 'framer-motion'
 import { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
 
 interface IProps {
   title: string
   caption: string
+  mb?: string
+  mt?: string
 }
 
 const hOneVariants = {
@@ -16,7 +18,7 @@ const spanVariants = {
   hidden: { opacity: 0, y: 120 },
 }
 
-function SectionHeader({ title, caption }: IProps) {
+function SectionHeader({ title, caption, mb = 'mb-20', mt = 'mt-20' }: IProps) {
   const controlsTop = useAnimation()
   const controlsBottom = useAnimation()
 
@@ -33,13 +35,13 @@ function SectionHeader({ title, caption }: IProps) {
   }, [controlsTop, inView, controlsBottom, inView2])
 
   return (
-    <div className="my-7 pt-3 pb-6 text-center text-white md:my-14">
+    <div className={`text-center text-white ${mb} ${mt}`}>
       <motion.h2
         ref={ref}
         animate={controlsTop}
         initial="hidden"
         variants={hOneVariants}
-        className="my-1 text-xl font-semibold md:my-3 md:text-3xl"
+        className="my-1 text-2xl font-semibold  "
       >
         {title}
       </motion.h2>
@@ -48,7 +50,7 @@ function SectionHeader({ title, caption }: IProps) {
         animate={controlsBottom}
         initial="hidden"
         variants={spanVariants}
-        className="my-1 text-2xl font-semibold md:my-3 md:text-3xl"
+        className="text-xl font-semibold  "
       >
         {caption}
       </motion.span>

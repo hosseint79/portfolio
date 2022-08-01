@@ -1,72 +1,153 @@
 ---
-title: "What's New In PHP 8?"
-date: 'March 7, 2021'
-excerpt:
-  'In this article we will look at some of the new features offered in version 8
-  of PHP'
-cover_image: '/images/posts/img4.jpg'
+layout: home
+title: Tailwind CSS Avatar - Flowbite
+description:
+  Use the avatar component to show a visual representation of a user profile
+  using an image element or SVG object based on multiple styles and sizes
+group: components
+toc: true
+
+previous: Accordion
+previousLink: components/accordion/
+next: Badge
+nextLink: components/badge/
 ---
 
-Lorem markdownum erat meritum instat quis! Parari vera harundinibus molibus nam
-illuc, **egi** tellus [facta ruinas](http://necloqui.com/fuit.html), iterumque!
-Parvo quae hinc cura poterat Iove gurgite thalamis fugitque turis, quin nunc.
+The avatar component can be used as a visual identifier for a user profile on
+your website and you can use the examples from Flowbite to modify the styles and
+sizes of these components using the utility classes from Tailwind CSS.
 
-    var pdf_linux_radcab = gibibyteAspUri + firewireIvr -
-            jre_software_character;
-    var megabit_layout = 38 + executableExpansionHdd(storage_import_runtime,
-            tweenJpeg) - contextual;
-    url_bing.upnp_modifier_cold(linkedin, inputTrackballRefresh.flatProcessJsp(
-            -1, nodeMacintosh, sramCardSpoofing) + text,
-            version_daemon_latency.localhost_compact_boot.dosSpool(
-            memory_controller_blu(jpegServer, maximizeAsciiType), status));
+## Default avatar
 
-Iungunt cuspis rarissima tendentem domus natis tamen ultima domino invidiosa
-cautum nec falcatus viridi omnes, soror. Ire tacita. Dissidet eat voce et
-Pactolides illa sed [hunc](http://passim.com/) longi illa arborea, dum securi;
-vidit.
+Use this example to create a circle and rounded avatar on an image element.
 
-## Dant testa animalia sequendi paterni manus parte
+{{< example id="default-avatar-example" class="flex space-x-4" github="components/avatar.md" show_dark=true >}}
+<img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Rounded avatar">
+<img class="w-10 h-10 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Default avatar">
+{{< /example >}}
 
-_Venus_ dissimulare perii _iaculatur dedere multumque_ sitim, cur tela
-temeraria, per? Meum eque deae tu vidisse Frigus triennia, equo
-[trahit](http://in.net/ignarusfuit.html), enim verti commota prima cornibus
-pectora!
+## Bordered
 
-    tiffWord(snippetAnimatedCd);
-    wrap_exbibyte = cropStation;
-    if (page(mailDvCybersquatter, error, ip)) {
-        xsltMacintosh += ip;
-    } else {
-        social += traceroute_redundancy_voip;
-        box_isp.lion = wepSuffix;
-    }
+Apply a border around the avatar component you can use the `ring-{color}` class
+from Tailwind CSS.
 
-Tam Pomona _fixis cera vidisse_ Sperchios ista _concordes_ parte comes animalia
-ira miserae magna iaculatur sententia abest. [Est](http://puer-nec.io/squalidus)
-illam esse hasta? Iamque Argolico spumam quondam, Sirenes dolor longus arbor
-perque.
+{{< example id="avatar-bordered-example" github="components/avatar.md" show_dark=true >}}
+<img class="p-1 w-10 h-10 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="/docs/images/people/profile-picture-5.jpg" alt="Bordered avatar">
+{{< /example >}}
 
-## Iamque illa numquam dictis
+## Placeholder
 
-Verberat arma parte mariti, tempora mugit glomerataque illa epulis: Troiam. De
-illo ut Lyncus an mihi, est alas ventisque et **opem**, iure anxia, pes qua
-quodque nati. Morti est tertia tutissimus prope, **herbas** hoc cecidere
-videres. Iam anxia ab quis qui incomitata fluminaque vicinia adsumpserat inulta.
-Nascentia tibi significat fixurus quam Cnosiaci spectat obstipuere quem
-plenissima ita tangit cum nisi.
+Use this example as a placeholder icon for the user profile when there is no
+custom image available.
 
-    class.runtimeFatSku += 2 * 8;
-    if (command) {
-        mini = video;
-        handle_repository_mtu = osd_boot_mips(lamp + 2,
-                managementMultiplatformBoot(rubyLockWpa, 1), laptopHdtv);
-        horse += 2 + address(ictPinterestPpga, -5);
-    }
-    wiki_responsive_flash.ddr_disk -= c_cd +
-            andCopy.intellectual_so_iteration.cross(moduleReadme, programming +
-            broadband);
+{{< example id="avatar-placeholder-example" github="components/avatar.md" show_dark=true >}}
 
-Mirantia deique sacerdos, opus, at
-[generis eandem planamque](http://www.potentia.net/lapis). Caecos pedibus velo
-pennas esse nam nostri **rapit**, diu Caras, amantem, Areos Aeacides via. Ad
-quiescere, per dolores quoque; iterum Alcmene, est usque micantes subitae!
+<div class="overflow-hidden relative w-10 h-10 bg-gray-100 rounded-full dark:bg-gray-600">
+    <svg class="absolute -left-1 w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+</div>
+{{< /example >}}
+
+## Dot indicator
+
+Use a dot element relative to the avatar component as an indicator for the user
+(eg. online or offline status).
+
+{{< example id="avatar-dot-indicator-example" class="flex space-x-4" github="components/avatar.md" show_dark=true >}}
+
+<div class="relative">
+    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <span class="top-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+</div>
+<div class="relative">
+    <img class="w-10 h-10 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <span class="absolute top-0 left-8 transform -translate-y-1/2 w-3.5 h-3.5 bg-red-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+</div>
+<div class="relative">
+    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <span class="bottom-0 left-7 absolute  w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+</div>
+<div class="relative">
+    <img class="w-10 h-10 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <span class="absolute bottom-0 left-8 transform translate-y-1/4 w-3.5 h-3.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+</div>
+{{< /example >}}
+
+## Stacked
+
+Use this example if you want to stack a group of users by overlapping the avatar
+components.
+
+{{< example id="avatar-stacked-example" github="components/avatar.md" show_dark=true >}}
+
+<div class="flex mb-5 -space-x-4">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-2.jpg" alt="">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-3.jpg" alt="">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-4.jpg" alt="">
+</div>
+<div class="flex -space-x-4">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-2.jpg" alt="">
+    <img class="w-10 h-10 rounded-full border-2 border-white dark:border-gray-800" src="/docs/images/people/profile-picture-3.jpg" alt="">
+    <a class="flex justify-center items-center w-10 h-10 text-xs font-medium text-white bg-gray-700 rounded-full border-2 border-white hover:bg-gray-600 dark:border-gray-800" href="#">+99</a>
+</div>
+{{< /example >}}
+
+## Avatar text
+
+This example can be used if you want to show additional information in the form
+of text elements such as the user's name and join date.
+
+{{< example id="avatar-text-example" github="components/avatar.md" show_dark=true >}}
+
+<div class="flex items-center space-x-4">
+    <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="">
+    <div class="space-y-1 font-medium dark:text-white">
+        <div>Jese Leos</div>
+        <div class="text-sm text-gray-500 dark:text-gray-400">Joined in August 2014</div>
+    </div>
+</div>
+{{< /example >}}
+
+## User dropdown
+
+Use this example if you want to show a dropdown menu when clicking on the avatar
+component.
+
+{{< example id="avatar-user-dropdown-example" class="flex space-x-4" github="components/avatar.md" show_dark=true iframeHeight="320" >}}
+<img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 rounded-full cursor-pointer" src="/docs/images/people/profile-picture-5.jpg" alt="User dropdown">
+
+<!-- Dropdown menu -->
+<div id="userDropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+    <div class="py-3 px-4 text-sm text-gray-900 dark:text-white">
+      <div>Bonnie Green</div>
+      <div class="font-medium truncate">name@flowbite.com</div>
+    </div>
+    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+    </ul>
+    <div class="py-1">
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+    </div>
+</div>
+{{< /example >}}
+
+## Sizes
+
+Choose from multiple sizing options for the avatar component from this example.
+
+{{< example id="avatar-sizes-example" class="flex flex-wrap items-center space-x-6" github="components/avatar.md" show_dark=true >}}
+<img class="w-6 h-6 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Extra small avatar">
+<img class="w-8 h-8 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Small avatar">
+<img class="w-10 h-10 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Medium avatar">
+<img class="w-20 h-20 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Large avatar">
+<img class="w-36 h-36 rounded" src="/docs/images/people/profile-picture-5.jpg" alt="Extra large avatar">
+{{< /example >}}

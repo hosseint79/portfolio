@@ -7,50 +7,148 @@ excerpt:
 cover_image: '/images/posts/img1.jpg'
 ---
 
-Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
-nigro cornu genus duris linguae. Super hic deus ego adveniens nullumque Venerem
-equis aurem aliisque celare densis dextramque similis **post**: mihi rexerat;
-bis.
+# An h1 header
 
-1. Scinditur annos
-2. Talia verba
-3. Habet delata villis domui
-4. Geminum viscere deum et utque
+Paragraphs are separated by a blank line.
 
-## Magnorum nulla avertit pedem neque monimenta terram
+2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists look like:
 
-Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
-pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique
-animorum ac! Quem sit. Venit qui, rex sibi tota, peto _fortis ira suis_ dolusque
-simulatque
-[incipit crudelesque pavens](http://www.corpora.com/terrae-oscula.html) spatiosa
-conlegit oscula equam.
+- this one
+- that one
+- the other one
 
-## Mensis idem
+Note that --- not considering the asterisk --- the actual text content starts at
+4-columns in.
 
-Caelestia Ganymedes gentis. Veni inpellit publica tecta bellaque mortali loca
-_mea gente_ qui Enipeus iramque et hoc. _Altera Rex vetitum_; hoc magis dolores
-precor nec. Ubi verba, et aras regia, cognoscere vites tempusque expers, heros?
+> Block quotes are written like so.
+>
+> They can span multiple paragraphs, if you like.
 
-## Mihi puto pallorem
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all in chapters
+12--14"). Three dots ... will be converted to an ellipsis. Unicode is supported.
+☺
 
-Hac forma, habeo quam et patria, ille tulit volat quamquam vulnus, aere est.
-Ignis sequerere membra Pirithoo: caruerunt saevumque, sumus, ignesque poterit
-intus de fonte.
+## An h2 header
 
-## Quondam montibus tua spes consilioque nata consilioque
+Here's a numbered list:
 
-Abigitque limite. Ipsa levis extulit munera, litora, ira pavet in morte, **te
-in** quas [vix](http://auxiliumquefando.net/vocibus-cum). Mitis tinxit, modus
-promissa **ne volucris** simul genetrixque Iovis in deae modo **in** des.
-_Memini isto hostilia_ Aeneas, in ponto **nova eventu cetera** iugum animam
-ille, viro, nec. Loquendi aves insisto saecula premente nec, at ego poscit ubi
-sub!
+1.  first item
+2.  second item
+3.  third item
 
-- Tristis natorum ora talia patriis famae naidas
-- Deus scilicet male miliaque noctisque invenio Nilum
-- Efficerentque devexaque foret haec leve ab fertilis
+Note again how the actual text starts at 4 columns in (4 characters from the
+left side). Here's a code sample:
 
-Institerat quantum facies parientem, crepitantis nondum. Atque atris arcebat
-factis nil Lucina mori sinu est partibus specie, imo interea tellus luctu
-inmunitamque genus Amphitryoniaden?
+    # Let me re-iterate ...
+    for i in 1 .. 10 { do-something(i) }
+
+As you probably guessed, indented 4 spaces. By the way, instead of indenting the
+block, you can use delimited blocks, if you like:
+
+```
+define foobar() {
+    print "Welcome to flavor country!";
+}
+```
+
+(which makes copying & pasting easier). You can optionally mark the delimited
+block for Pandoc to syntax highlight it:
+
+```python
+import time
+# Quick, count to ten!
+for i in range(10):
+    # (but not *too* quick)
+    time.sleep(0.5)
+    print(i)
+```
+
+### An h3 header
+
+Now a nested list:
+
+1.  First, get these ingredients:
+
+    - carrots
+    - celery
+    - lentils
+
+2.  Boil some water.
+
+3.  Dump everything in the pot and follow this algorithm:
+
+        find wooden spoon
+        uncover pot
+        stir
+        cover pot
+        balance wooden spoon precariously on pot handle
+        wait 10 minutes
+        goto first step (or shut off burner when done)
+
+    Do not bump wooden spoon or it will fall.
+
+Notice again how text always lines up on 4-space indents (including that last
+line which continues item 3 above).
+
+Here's a link to [a website](http://foo.bar), to a [local doc](local-doc.html),
+and to a [section heading in the current doc](#an-h2-header). Here's a footnote
+[^1].
+
+[^1]: Some footnote text.
+
+Tables can look like this:
+
+Name Size Material Color
+
+---
+
+All Business 9 leather brown Roundabout 10 hemp canvas natural Cinderella 11
+glass transparent
+
+Table: Shoes sizes, materials, and colors.
+
+(The above is the caption for the table.) Pandoc also supports multi-line
+tables:
+
+---
+
+Keyword Text
+
+---
+
+red Sunsets, apples, and other red or reddish things.
+
+green Leaves, grass, frogs and other things it's not easy being.
+
+---
+
+A horizontal rule follows.
+
+---
+
+Here's a definition list:
+
+apples : Good for making applesauce.
+
+oranges : Citrus!
+
+tomatoes : There's no "e" in tomatoe.
+
+Again, text is indented 4 spaces. (Put a blank line between each term and its
+definition to spread things out more.)
+
+Here's a "line block" (note how whitespace is honored):
+
+| Line one | Line too | Line tree
+
+and images can be specified like so:
+
+![example image](example-image.jpg 'An exemplary image')
+
+Inline math equation: $\omega = d\phi / dt$. Display math should get its own
+line like so:
+
+$$I = \int \rho R^{2} dV$$
+
+And note that you can backslash-escape any punctuation characters which you wish
+to be displayed literally, ex.: \`foo\`, \*bar\*, etc.

@@ -1,14 +1,14 @@
 interface IProps {
-  count: string
-  firstTitle: string
   secondTitle: string
+  firstTitle: string
+  count: string
 }
 function ShortInfoItem({ count, firstTitle, secondTitle }: IProps) {
   return (
-    <div className="mx-3 text-center sm:mx-5 md:mx-16">
-      <h5 className="text-base font-semibold md:text-2xl">{count}+</h5>
-      <h6 className="text-sm text-[#BBB9C2] md:text-xl">{firstTitle}</h6>
-      <h6 className="text-sm text-[#BBB9C2] md:text-lg">{secondTitle}</h6>
+    <div className="mx-3 mb-5 text-center sm:mx-5 lg:mx-16">
+      <h5 className="text-lg font-semibold lg:text-xl">{count}+</h5>
+      <h6 className="text-sm text-[#BBB9C2] ">{firstTitle}</h6>
+      <h6 className="text-sm text-[#BBB9C2] ">{secondTitle}</h6>
     </div>
   )
 }
