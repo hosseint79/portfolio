@@ -24,7 +24,7 @@ export const loader: LoaderFunction = async ({ params }) => {
     const postsDirectory = path.join(process.cwd(), 'posts')
     console.log('postsDirectory', postsDirectory)
     const markdownWithMeta = fs.readFileSync(
-      path.join(postsDirectory, params.slug + ''),
+      path.join(postsDirectory, params.slug + '.md'),
       'utf-8',
     )
 
@@ -40,8 +40,6 @@ export const loader: LoaderFunction = async ({ params }) => {
   } catch (error) {
     return json({
       status: 'error',
-      slug: params.slug,
-      filePath: path.join('app/posts', params.slug + '.md'),
     })
   }
 }
