@@ -728,10 +728,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-block;
 }
 
-.\!inline {
-  display: inline !important;
-}
-
 .flex {
   display: flex;
 }
