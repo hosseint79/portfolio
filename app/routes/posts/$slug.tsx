@@ -1,7 +1,7 @@
 import javascript from 'highlight.js/lib/languages/javascript'
-import { BlogLayout } from '~/components/Layout/BlogLayout'
 import { ReactNode, useEffect, useState } from 'react'
 import type { LoaderFunction } from '@remix-run/node'
+import { Footer } from '~/components/Footer/Footer'
 import { useLoaderData } from '@remix-run/react'
 import { json } from '@remix-run/node'
 import matter from 'gray-matter'
@@ -9,6 +9,7 @@ import { marked } from 'marked'
 import hljs from 'highlight.js'
 import path from 'path'
 import fs from 'fs'
+import { BlogLayout } from '~/components/Layout/BlogLayout'
 
 marked.setOptions({
   langPrefix: 'hljs language-',
@@ -30,9 +31,11 @@ export const loader: LoaderFunction = async ({ params }) => {
       frontmatter, // return {
     )
 
+    const html = marked(content)
+
     return json({
       frontmatter,
-      content,
+      content: html,
       status: 'success',
     })
   } catch (error) {
@@ -49,8 +52,9 @@ export function ClientOnly({ children }: { children: ReactNode }) {
   return mounted ? <>{children}</> : null
 }
 export default function PostSlug() {
-  const { content, frontmatter } = useLoaderData()
-
+  const { content, frontmatter, status } = useLoaderData()
+  const src = frontmatter?.cover_image.split('public')
+  console.log(src)
   return (
     <BlogLayout>
       <main className="min-h-screen bg-[#110f1c]" style={{ direction: 'rtl' }}>
@@ -71,7 +75,7 @@ export default function PostSlug() {
             <div className="post-body">
               <div
                 dangerouslySetInnerHTML={{
-                  __html: marked(content),
+                  __html: content,
                 }}
               ></div>
             </div>
