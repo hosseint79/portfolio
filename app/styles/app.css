@@ -712,6 +712,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1712,6 +1720,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mb-40 {
+    margin-bottom: 10rem;
   }
 
   .lg\:block {

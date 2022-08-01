@@ -23,36 +23,15 @@ video {
 }
 
 .threeD-carousel-button > div:nth-child(2) {
-  /* position: relative; */
-  position: unset;
   display: flex;
   justify-content: center;
 }
-.threeD-carousel-button > div:nth-child(2) > img {
-  height: 85px;
-  width: 60px;
+.threeD-carousel-button > div > img {
+  height: 80px;
+  width: 55px;
   cursor: pointer;
   padding: 12px;
   overflow: hidden;
-}
-.threeD-carousel-button > div:nth-child(2) > img:nth-child(1) {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translate(-50%, -50%);
-}
-.threeD-carousel-button > div:nth-child(2) > img:nth-child(2) {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translate(50%, -50%);
-}
-
-@media screen and (min-width: 768px) {
-  .threeD-carousel-button > div:nth-child(2) {
-    margin-top: 85px;
-    top: 0px;
-  }
 }
 
 @keyframes star {

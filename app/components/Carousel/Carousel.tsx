@@ -9,7 +9,7 @@ import { slides } from './Carousel.data'
 
 function TdCarousel() {
   return (
-    <div id="projects" className="overflow-hidden">
+    <div id="projects" className="lg:mb-40">
       <Container>
         <SectionHeader title="Projects" caption="Some of my projects" />
         <div>
