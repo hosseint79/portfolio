@@ -6,7 +6,7 @@ function AboutMeText() {
     <div className=" z-10 order-2 flex w-full items-center justify-end p-4 md:p-6 lg:order-1 lg:w-4/6 lg:p-8 ">
       <main className=" relative w-full lg:w-5/6">
         <h1
-          className="-top-20 -left-16 z-0 text-[4rem] font-semibold  text-[rgba(243,240,240,0.32)] lg:absolute lg:text-[7.2rem] lg:text-[rgba(243,240,240,0.13)]"
+          className="-top-20 -left-16 z-0 text-[3.5rem] font-semibold  text-[rgba(243,240,240,0.32)] lg:absolute lg:text-[7.2rem] lg:text-[rgba(243,240,240,0.13)]"
           style={{
             fontFamily: 'sans-serif',
           }}
@@ -18,9 +18,9 @@ function AboutMeText() {
             fontFamily: 'monospace',
             fontStyle: 'italic',
           }}
-          className="relative z-10 w-full border-2 border-solid border-white  px-4 py-14  text-xl text-white backdrop-blur-[6px] lg:px-11"
+          className="relative z-10 w-full border-2 border-solid border-white  px-4 py-14 text-base text-white backdrop-blur-[6px] lg:px-11 lg:text-xl"
         >
-          <span className="text-2xl font-bold italic text-cyan-800">
+          <span className="text-lg font-bold italic text-cyan-800 lg:text-2xl">
             <Typewriter
               onInit={(typewriter: any) => {
                 typewriter
@@ -40,7 +40,7 @@ function AboutMeText() {
           Proficient in developing and creating user interfaces, writing and
           testing codes, troubleshooting simple/complex issues, and implementing
           new features based on user feedback.
-          <div className="mt-6 flex justify-end">
+          <div className="mt-10 flex justify-end">
             <CvButton text="Download Cv" />
           </div>
         </div>
