@@ -13,6 +13,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@prisma/client": "^4.1.1",
     "@remix-run/node": "^1.6.5",
     "@remix-run/react": "^1.6.5",
     "@remix-run/serve": "^1.6.5",
@@ -31,6 +32,7 @@
     "react-spring-3d-carousel": "^1.2.1",
     "react-toastify": "^9.0.5",
     "react-tsparticles": "^2.0.6",
+    "remark-mdx-code-meta": "^2.0.0",
     "remix-utils": "^3.3.0",
     "tiny-invariant": "^1.2.0",
     "tsparticles": "^2.0.6",

@@ -19,6 +19,10 @@ export function links() {
     { rel: 'stylesheet', href: globalstyles },
     {
       rel: 'stylesheet',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism-dark.min.css',
+    },
+    {
+      rel: 'stylesheet',
       href: toaststyles,
     },
   ]
