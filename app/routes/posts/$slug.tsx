@@ -21,8 +21,10 @@ marked.setOptions({
 
 export const loader: LoaderFunction = async ({ params }) => {
   try {
+    const postsDirectory = path.join(process.cwd(), 'posts')
+    console.log('postsDirectory', postsDirectory)
     const markdownWithMeta = fs.readFileSync(
-      path.join('app/posts', params.slug + '.md'),
+      path.join(postsDirectory, params.slug + ''),
       'utf-8',
     )
 
