@@ -1204,6 +1204,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }

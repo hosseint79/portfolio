@@ -17,7 +17,7 @@ export const slides = [
     content: (
       <CarouselContainer
         url="https://erp.sabak.org/"
-        image="/images/works/work1.png"
+        image="/images/works/work1.jpg"
         listItems={[
           {
             animation: 'moveInRight',
@@ -64,7 +64,7 @@ export const slides = [
     content: (
       <CarouselContainer
         url="https://navaa.co/"
-        image="/images/works/work3.png"
+        image="/images/works/work3.jpg"
         listItems={[
           {
             animation: 'moveInRight',
@@ -112,7 +112,7 @@ export const slides = [
     content: (
       <CarouselContainer
         url="https://zeemind.ir/"
-        image="/images/works/work2.png"
+        image="/images/works/work2.jpg"
         listItems={[
           {
             animation: 'moveInRight',
