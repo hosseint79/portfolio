@@ -1,33 +1,26 @@
 import { Link } from '@remix-run/react'
-import {
-  FiArrowRight,
-  FiArrowRightCircle,
-  FiChevronRight,
-} from 'react-icons/fi'
+import { FiChevronRight } from 'react-icons/fi'
 import { Container } from '../common/Container/Container'
 import { SectionHeader } from '../common/SectionHeader/SectionHeader'
 
 const data = [
   {
     image: '/images/blog-image.jpg',
-    title:
-      '  this is not a caption for testing  this is not a caption for testing',
+    title: 'What is Lorem Ipsum?',
     description:
-      '  this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing',
+      "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book Ipsum is that it has a more-or-less normal distribution of letter",
   },
   {
     image: '/images/blog-image1.jpg',
-    title:
-      '  this is not a caption for testing  this is not a caption for testing',
+    title: 'Why do we use it?',
     description:
-      '  this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing',
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letter Ipsum is that it has a more-or-less normal distribution of letter',
   },
   {
     image: '/images/blog-image3.jpg',
-    title:
-      '  this is not a caption for testing  this is not a caption for testing',
+    title: 'Where does it come from?',
     description:
-      '  this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing   this is not a caption for testing  this is not a caption for testing',
+      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur',
   },
 ]
 

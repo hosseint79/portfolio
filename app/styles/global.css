@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'iranYekan';
+  src: url('/fonts/iranYekan/IRANYekanRegular.ttf');
+}
+
 :root {
   --color-team-yellow: #a08600;
 }
 
 html {
   scroll-behavior: smooth !important;
+  font-family: iranYekan;
 }
 
 .cvBtn .cvBtnAnimation {
