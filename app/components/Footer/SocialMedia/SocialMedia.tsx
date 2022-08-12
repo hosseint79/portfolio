@@ -26,21 +26,20 @@ function SocialItem({ duration, href, Icon, hoverBg }: IProps) {
     }
   }, [controls, inView])
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
-      className={
-        'mx-1 flex h-16 w-16 items-center justify-center rounded-full bg-[#0b172f87] p-1 duration-500 ' +
-        hoverBg
-      }
-    >
-      <a href={href} target="__blank">
-        {' '}
-        <Icon />{' '}
-      </a>
-    </motion.div>
+    <a href={href} target="__blank">
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={squareVariants}
+        className={
+          'mx-1 flex h-16 w-16 items-center justify-center rounded-full bg-[#0b172f87] p-1 duration-500 ' +
+          hoverBg
+        }
+      >
+        <Icon />
+      </motion.div>
+    </a>
   )
 }
 
