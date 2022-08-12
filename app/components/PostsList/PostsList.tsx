@@ -3,7 +3,6 @@ import { FiChevronRight } from 'react-icons/fi'
 import { Container } from '../common/Container/Container'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { SectionHeader } from '../common/SectionHeader/SectionHeader'
-import 'react-lazy-load-image-component/src/effects/blur.css'
 import { CutomImage } from '../common/CutomImage/CutomImage'
 
 const data = [
