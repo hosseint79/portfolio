@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
-import { SiRedux } from 'react-icons/si'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { CutomImage } from '~/components/common/CutomImage/CutomImage'
 import CarouselItem from './CarouselItem.tsx/CarouselItem'
 
 interface Item {
@@ -31,17 +30,17 @@ const CarouselContainer: FC<IPropsType> = ({ url, image, listItems }) => {
           ))}
         </div>
       </div>
-      <LazyLoadImage
-        alt={'alt'}
-        className="h-[160px] sm:h-[240px] md:h-[350px]"
-        effect="black-and-white"
-        placeholderSrc="/images/blog-image3-blur.jpg"
-        src={image} // use normal <img> attributes as props
-        style={{
-          borderRadius: '10px',
-          boxShadow: '0 0px 10px 3px #564f7f',
-        }}
-      />
+      <div className="w-[160px]  sm:w-[240px] md:w-[600px]">
+        <CutomImage
+          alt={'alt'}
+          ratio="8/5"
+          src={image} // use normal <img> attributes as props
+          style={{
+            borderRadius: '8px',
+            boxShadow: '0 0px 10px 3px #564f7f',
+          }}
+        />
+      </div>
     </a>
   )
 }

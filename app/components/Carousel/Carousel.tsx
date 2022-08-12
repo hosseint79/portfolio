@@ -7,6 +7,18 @@ import { SectionHeader } from '../common/SectionHeader/SectionHeader'
 import { ResponsiveCarousel } from '../ResponsiveCarousel/ResponsiveCarousel'
 import { slides } from './Carousel.data'
 
+const projectImages = [
+  {
+    src: '/images/works/work1.jpg',
+  },
+  {
+    src: '/images/works/work2.jpg',
+  },
+  {
+    src: '/images/works/work3.jpg',
+  },
+]
+
 function TdCarousel() {
   return (
     <div id="projects" className="lg:mb-40">
@@ -14,7 +26,7 @@ function TdCarousel() {
         <SectionHeader title="Projects" caption="Some of my projects" />
         <div>
           <div className="block lg:hidden">
-            <ResponsiveCarousel />
+            <ResponsiveCarousel slides={projectImages} />
           </div>
           <div className="threeD-carousel-button relative hidden h-[240px] px-4 md:h-[400px] md:px-16 lg:block ">
             <Carousel

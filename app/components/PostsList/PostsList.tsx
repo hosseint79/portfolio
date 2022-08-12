@@ -4,6 +4,7 @@ import { Container } from '../common/Container/Container'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { SectionHeader } from '../common/SectionHeader/SectionHeader'
 import 'react-lazy-load-image-component/src/effects/blur.css'
+import { CutomImage } from '../common/CutomImage/CutomImage'
 
 const data = [
   {
@@ -40,12 +41,10 @@ const PostsList = () => {
             >
               <div className=" group relative w-full cursor-pointer text-white ">
                 <div className="relative">
-                  <LazyLoadImage
+                  <CutomImage
                     alt={'alt'}
                     className="rounded-lg"
-                    width="100%"
-                    effect="black-and-white"
-                    placeholderSrc="/images/blog-image3-blur.jpg"
+                    ratio="8/5"
                     src={item.image} // use normal <img> attributes as props
                   />
                   <div

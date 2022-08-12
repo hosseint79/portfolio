@@ -1,26 +1,24 @@
-import React from 'react'
+import { CutomImage } from '../common/CutomImage/CutomImage'
 
-const ResponsiveCarousel = () => {
+interface IProps {
+  slides: any
+}
+
+const ResponsiveCarousel = ({ slides }: IProps) => {
   return (
-    <div className="flex-no-wrap flex overflow-auto">
-      <div className="mr-3 w-4/5 flex-shrink-0 ">
-        <img
-          src="/images/works/work1.png"
-          className="h-auto w-full rounded-lg"
-        />
-      </div>
-      <div className="mr-3 w-4/5 flex-shrink-0">
-        <img
-          src="/images/works/work2.png"
-          className="h-auto w-full rounded-lg"
-        />
-      </div>
-      <div className="mr-3 w-4/5 flex-shrink-0">
-        <img
-          src="/images/works/work3.png"
-          className="h-auto w-full rounded-lg"
-        />
-      </div>
+    <div className="flex-no-wrap flex overflow-auto py-2">
+      {slides.map((item: any) => {
+        return (
+          <div className=" mr-3 w-11/12 flex-shrink-0 ">
+            <CutomImage
+              alt={'alt'}
+              ratio="8/5"
+              className="rounded-lg"
+              src={item.src} // use normal <img> attributes as props
+            />
+          </div>
+        )
+      })}
     </div>
   )
 }
