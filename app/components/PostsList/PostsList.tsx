@@ -1,7 +1,9 @@
 import { Link } from '@remix-run/react'
 import { FiChevronRight } from 'react-icons/fi'
 import { Container } from '../common/Container/Container'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { SectionHeader } from '../common/SectionHeader/SectionHeader'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const data = [
   {
@@ -29,15 +31,23 @@ const PostsList = () => {
     <Container>
       <SectionHeader caption="See some articles" title="Articles" />
       <div className="flex w-full flex-wrap gap-10 md:flex-nowrap md:gap-5 lg:gap-10 lg:px-16">
-        {data.map(item => {
+        {data.map((item, index) => {
           return (
             <Link
+              key={index}
               to="/posts/django-crash-course"
               className="relative block w-full scale-100 transition-all duration-300 md:w-1/3 md:hover:scale-105"
             >
               <div className=" group relative w-full cursor-pointer text-white ">
                 <div className="relative">
-                  <img className="h-auto w-full rounded-lg " src={item.image} />
+                  <LazyLoadImage
+                    alt={'alt'}
+                    className="rounded-lg"
+                    width="100%"
+                    effect="black-and-white"
+                    placeholderSrc="/images/blog-image3-blur.jpg"
+                    src={item.image} // use normal <img> attributes as props
+                  />
                   <div
                     className="invisible absolute top-0 left-0 flex h-full  w-full items-center justify-center rounded-lg text-xl
                              font-bold opacity-0 transition-all duration-500  group-hover:visible group-hover:bg-[#3830a3c2] group-hover:opacity-100"
