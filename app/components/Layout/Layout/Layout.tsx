@@ -22,7 +22,7 @@ const Layout: FC = ({ children }) => {
     false, // skill activator
     false, // contact-me activator
     false, // project activator
-    false, // footer activator
+    false, // postList activator
   ])
 
   return (
