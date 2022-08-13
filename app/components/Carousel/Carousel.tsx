@@ -7,7 +7,7 @@ import { SectionHeader } from '../common/SectionHeader/SectionHeader'
 import { ResponsiveCarousel } from '../ResponsiveCarousel/ResponsiveCarousel'
 import { slides } from './Carousel.data'
 import { InView } from 'react-intersection-observer'
-import { useNavigationContext } from '../Layout/Layout'
+import { useNavigationContext } from '../Layout/Layout/Layout'
 
 const projectImages = [
   {

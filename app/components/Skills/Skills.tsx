@@ -3,7 +3,7 @@ import { SkillsContainer } from './SkillsContainer/SkillsContainer'
 import { Container } from '../common/Container/Container'
 import { ShortInfo } from './ShortInfo/ShortInfo'
 import { InView } from 'react-intersection-observer'
-import { useNavigationContext } from '../Layout/Layout'
+import { useNavigationContext } from '../Layout/Layout/Layout'
 
 function Skills() {
   const { setActiveNavigation } = useNavigationContext()

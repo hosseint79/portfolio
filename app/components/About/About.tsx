@@ -4,7 +4,7 @@ import { ScrollDown } from './ScrollDown/ScrollDown'
 import { SpaceMan } from './SpaceMan/SpaceMan'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
-import { useNavigationContext } from '../Layout/Layout'
+import { useNavigationContext } from '../Layout/Layout/Layout'
 import { InView } from 'react-intersection-observer'
 
 const About = () => {

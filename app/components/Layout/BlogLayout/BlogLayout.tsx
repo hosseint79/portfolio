@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { Footer } from '../Footer/Footer'
-import { Header } from '../Header/Header'
+import { BlogFooter } from './BlogFooter/BlogFooter'
+import { Header } from './Header/Header'
 
 interface IProps {
   children?: ReactNode
@@ -11,7 +11,7 @@ function BlogLayout({ children }: IProps) {
     <div className="bg-[#110f1c]">
       <Header />
       {children}
-      <Footer />
+      <BlogFooter />
     </div>
   )
 }

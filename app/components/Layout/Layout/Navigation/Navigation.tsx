@@ -1,7 +1,7 @@
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsArrowDownCircle } from 'react-icons/bs'
 import { NavigationItem } from './Navigation-Item/Navigation-Item'
-import { FiFigma, FiMail, FiPackage } from 'react-icons/fi'
+import { FiBook, FiFigma, FiMail, FiPackage } from 'react-icons/fi'
 
 const navigationData = [
   {
@@ -21,8 +21,8 @@ const navigationData = [
     go: 'projects',
   },
   {
-    icon: BsArrowDownCircle,
-    go: 'footer',
+    icon: FiBook,
+    go: 'postlist',
   },
 ]
 
