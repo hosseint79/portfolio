@@ -1,13 +1,13 @@
 import { ContactMe } from '~/components/ContactMe/ContactMe'
 import { PostsList } from '~/components/PostsList/PostsList'
 import { ClientOnly } from '~/lib/utilities/ClientOnly'
-import { Footer } from '~/components/Footer/Footer'
-import { Layout } from '~/components/Layout/Layout'
+import { Layout } from '~/components/Layout/Layout/Layout'
 import { Skills } from '~/components/Skills/Skills'
 import { About } from '~/components/About/About'
 import { ActionFunction } from '@remix-run/node'
 import { ToastContainer } from 'react-toastify'
 import { lazy, Suspense } from 'react'
+import { Footer } from '~/components/Layout/Layout/Footer/Footer'
 
 let TdCarousel = lazy(() => import('~/components/Carousel/Carousel'))
 

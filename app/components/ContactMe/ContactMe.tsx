@@ -1,7 +1,7 @@
 import { InView } from 'react-intersection-observer'
 import { Container } from '../common/Container/Container'
 import { SectionHeader } from '../common/SectionHeader/SectionHeader'
-import { useNavigationContext } from '../Layout/Layout'
+import { useNavigationContext } from '../Layout/Layout/Layout'
 import { ContactMeForm } from './ContactMeForm/ContactMeForm'
 import { ContactMeInformation } from './ContactMeInformation/ContactMeInformation'
 

@@ -1,7 +1,7 @@
 import { Link } from '@remix-run/react'
 import { FC } from 'react'
 import { IconType } from 'react-icons'
-import { useNavigationContext } from '~/components/Layout/Layout'
+import { useNavigationContext } from '~/components/Layout/Layout/Layout'
 
 interface PropsType {
   Icon: IconType

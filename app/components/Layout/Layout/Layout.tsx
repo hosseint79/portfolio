@@ -1,5 +1,5 @@
 import React, { FC, useState, createContext, useContext } from 'react'
-import { Navigation } from '../Navigation/Navigation'
+import { Navigation } from './Navigation/Navigation'
 
 interface IContext {
   activeNavigation: Array<boolean>
@@ -11,7 +11,7 @@ const LayoutProvider = createContext<IContext | null>(null)
 export const useNavigationContext = () => {
   const pc = useContext(LayoutProvider)
   if (pc === null) {
-    throw new Error('useGlobalState Must be inside of Provider')
+    throw new Error('useNavigationContext Must be inside of Provider')
   }
   return pc
 }

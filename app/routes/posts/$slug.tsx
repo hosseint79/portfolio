@@ -2,7 +2,7 @@ import type { LoaderFunction } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { json } from '@remix-run/node'
 
-import { BlogLayout } from '~/components/Layout/BlogLayout'
+import { BlogLayout } from '~/components/Layout/BlogLayout/BlogLayout'
 import { GetBlog } from '~/lib/utilities/test.server'
 import { Container } from '~/components/common/Container/Container'
 

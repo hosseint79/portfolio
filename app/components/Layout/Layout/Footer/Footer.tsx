@@ -1,6 +1,6 @@
 import { BsMouse } from 'react-icons/bs'
 import { InView } from 'react-intersection-observer'
-import { useNavigationContext } from '../Layout/Layout'
+import { useNavigationContext } from '../Layout'
 
 import { SocialMedia } from './SocialMedia/SocialMedia'
 

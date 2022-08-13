@@ -1,6 +1,6 @@
 import { Link } from '@remix-run/react'
 import { FiMoon } from 'react-icons/fi'
-import { Container } from '../common/Container/Container'
+import { Container } from '~/components/common/Container/Container'
 
 function Header() {
   return (
