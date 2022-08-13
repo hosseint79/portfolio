@@ -1082,6 +1082,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(55 48 163 / var(--tw-border-opacity));
 }
 
+.border-\[\#0e82a7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 130 167 / var(--tw-border-opacity));
+}
+
 .bg-\[\#110f1c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(17 15 28 / var(--tw-bg-opacity));
@@ -1374,6 +1379,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-indigo-800 {
   --tw-text-opacity: 1;
   color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+
+.text-\[\#0e82a7\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 130 167 / var(--tw-text-opacity));
 }
 
 .underline {
