@@ -44,7 +44,21 @@ function ContactMeForm() {
     <form
       onSubmit={e => {
         e.preventDefault()
-        sendData()
+        if (formData.name && formData.phoneNumber && formData.message) {
+          sendData()
+        } else {
+          toast.error('✍🏻 All fields are required!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            // rtl: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          })
+        }
+
         setFormData({ name: '', phoneNumber: '', message: '' })
       }}
       className="col-span-5 lg:col-span-3"

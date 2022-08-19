@@ -26,7 +26,7 @@ const About = () => {
       }}
     >
       <div className="bg-gradient-to-b from-black via-black to-[#110f1c]">
-        <div className="relative mx-auto flex min-h-screen w-full  flex-col lg:flex-row 2xl:w-[1536px]">
+        <div className="relative mx-auto flex min-h-screen w-full  flex-col lg:flex-row ">
           <Particles
             style={{ position: 'absolute' }}
             id="tsparticles"
