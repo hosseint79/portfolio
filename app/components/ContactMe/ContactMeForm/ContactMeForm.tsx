@@ -8,10 +8,21 @@ function ContactMeForm() {
   const transition = useTransition()
 
   useEffect(() => {
+    if (actionData?.status === 'error') {
+      toast.error('All feilds are Required ! ', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      })
+    }
     if (actionData?.status === 'success') {
       toast('🚀 Your message sent successfuly ', {
         position: 'top-right',
-        autoClose: 5000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

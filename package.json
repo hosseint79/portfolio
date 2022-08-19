@@ -10,8 +10,7 @@
     "dev:css": "tailwindcss -w -o app/styles/app.css",
     "prepare": "husky install",
     "format": "npx prettier --write .",
-    "lint": "eslint .",
-    "server": "json-server --watch db.json --port 5000"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@remix-run/node": "^1.6.5",
@@ -28,6 +27,7 @@
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.34.2",
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^9.3.5",
     "react-lazy-load-image-component": "^1.5.5",

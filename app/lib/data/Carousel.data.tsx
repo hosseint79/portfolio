@@ -21,8 +21,8 @@ export const responsiveSlides = [
     url: 'https://zeemind.ir/',
   },
   {
-    src: '/images/works/work3.jpg',
-    url: 'https://navaa.co/',
+    src: '/images/works/work4.png',
+    url: 'https://skinpedia.ir/',
   },
 ]
 
@@ -78,8 +78,8 @@ export const slides = [
     key: 33,
     content: (
       <CarouselContainer
-        url="https://navaa.co/"
-        image="/images/works/work3.jpg"
+        url="https://skinpedia.ir/"
+        image="/images/works/work4.png"
         listItems={[
           {
             animation: 'moveInRight',

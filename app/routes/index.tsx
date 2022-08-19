@@ -40,6 +40,10 @@ export const action: ActionFunction = async ({ request }) => {
   const number = formData.get('number')
   const message = formData.get('message')
 
+  if (!name || !number || !message) {
+    return { status: 'error' }
+  }
+
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
