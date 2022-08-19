@@ -1097,6 +1097,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(33 29 53 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#f2f2f22e\] {
+  background-color: #f2f2f22e;
+}
+
 .bg-emerald-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(4 120 87 / var(--tw-bg-opacity));
@@ -1124,15 +1128,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f2f2f22e\] {
-  background-color: #f2f2f22e;
 }
 
 .bg-gradient-to-b {
@@ -1327,15 +1322,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(169 173 193 / var(--tw-text-opacity));
 }
 
-.text-team {
-  color: var(--color-team-yellow);
-}
-
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-\[rgba\(243\2c 240\2c 240\2c 0\.32\)\] {
   color: rgba(243, 240, 240, 0.32);
 }
@@ -1383,11 +1369,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#0e82a7\] {
   --tw-text-opacity: 1;
   color: rgb(14 130 167 / var(--tw-text-opacity));
-}
-
-.underline {
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
 }
 
 .opacity-0 {
@@ -1460,11 +1441,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(49 46 129 / var(--tw-border-opacity));
 }
 
-.hover\:bg-\[\#201d2b\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 29 43 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-slate-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
@@ -1483,6 +1459,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-red-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#201d2b\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 29 43 / var(--tw-bg-opacity));
 }
 
 .hover\:text-indigo-900:hover {
@@ -1696,16 +1677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .md\:hover\:scale-105:hover {

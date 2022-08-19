@@ -7,9 +7,14 @@ interface IProps {
 const ResponsiveCarousel = ({ slides }: IProps) => {
   return (
     <div className="flex-no-wrap flex overflow-auto py-2">
-      {slides.map((item: any) => {
+      {slides.map((item: any, index: number) => {
         return (
-          <a href={item.url} className="mr-3 block w-11/12 flex-shrink-0 ">
+          <a
+            key={index}
+            href={item.url}
+            target="__blank"
+            className="mr-3 block w-11/12 flex-shrink-0 "
+          >
             <CutomImage
               alt={'alt'}
               ratio="8/5"

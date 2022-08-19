@@ -1,9 +1,6 @@
+import { useEffect } from 'react'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsLinkedin, BsWhatsapp } from 'react-icons/bs'
-import { TiSocialGithub } from 'react-icons/ti'
-import { useEffect } from 'react'
 import { homePageData } from '~/lib/data/home-page.data'
 
 interface IProps {
@@ -47,9 +44,10 @@ function SocialItem({ duration, href, Icon, hoverBg }: IProps) {
 function SocialMedia() {
   return (
     <div className="my-14 flex">
-      {homePageData.footerInfo.socialItems.map(item => {
+      {homePageData.footerInfo.socialItems.map((item, index) => {
         return (
           <SocialItem
+            key={index}
             duration={item.duration}
             hoverBg={item.hoverBg}
             Icon={item.Icon}
