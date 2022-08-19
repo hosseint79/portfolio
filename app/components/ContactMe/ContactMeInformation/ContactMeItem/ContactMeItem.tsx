@@ -11,7 +11,7 @@ interface IProps {
 const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
   const [copyDuration, setCopyDuration] = useState(false)
   return (
-    <div className="mb-6 flex items-center text-white">
+    <div className="mb-6 flex flex-col items-center justify-center text-center text-white lg:mb-0 lg:flex-row lg:text-left">
       {icon}
       <div className="my-2">
         <h5 className="mb-[2px] text-lg font-bold">{title} </h5>
@@ -26,13 +26,18 @@ const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
             }
           }}
         >
-          <h6 className="flex cursor-pointer flex-wrap items-center gap-3">
+          <h6 className="flex cursor-pointer flex-col flex-nowrap items-center lg:flex-row lg:gap-3">
             {text}
             <span className="h-9">
               {copyDuration && (
                 <span className=" flex flex-col text-[#3dc66b] ">
                   <div className="flex items-center">
-                    <FiCheckSquare color="#3dc66b" className="mr-3" />
+                    {/* {text !== 'hossein.w7979@gmail.com' ? (
+                      <FiCheckSquare color="#3dc66b" className="mr-1" />
+                    ) : (
+                      ''
+                    )} */}
+
                     <span>Copied!</span>
                   </div>
 
