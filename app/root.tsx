@@ -12,6 +12,7 @@ import globalstyles from './styles/global.css'
 import toaststyles from 'react-toastify/dist/ReactToastify.css'
 import highlight from 'highlight.js/styles/base16/harmonic16-dark.css'
 import LazyLoad from 'react-lazy-load-image-component/src/effects/black-and-white.css'
+import { ToastContainer } from 'react-toastify'
 
 export function links() {
   return [
@@ -40,6 +41,15 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <ToastContainer
+          autoClose={3000}
+          newestOnTop
+          closeOnClick
+          rtl={true}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover
+        />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

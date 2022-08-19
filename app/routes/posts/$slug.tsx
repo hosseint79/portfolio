@@ -1,14 +1,12 @@
-import type { LoaderFunction } from '@remix-run/node'
-import { useLoaderData } from '@remix-run/react'
 import { json } from '@remix-run/node'
-
-import { BlogLayout } from '~/components/Layout/BlogLayout/BlogLayout'
+import { useLoaderData } from '@remix-run/react'
+import type { LoaderFunction } from '@remix-run/node'
 import { GetBlog } from '~/lib/utilities/test.server'
 import { Container } from '~/components/common/Container/Container'
+import { BlogLayout } from '~/components/Layout/BlogLayout/BlogLayout'
 
 export const loader: LoaderFunction = async ({ params }) => {
   const { html, frontmatter } = GetBlog(params.slug + '')
-
   return json({
     frontmatter,
     html,
@@ -37,8 +35,7 @@ export default function PostSlug() {
                 {frontmatter?.title}
               </h1>
               <div className="mb-2 text-sm font-bold text-[#A9ADC1] ">
-                {' '}
-                تاریخ : {frontmatter?.date}{' '}
+                تاریخ : {frontmatter?.date}
               </div>
               <div className="post-body">
                 <div

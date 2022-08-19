@@ -1,5 +1,6 @@
 import CvButton from '~/components/CvButton/CvButton'
 import Typewriter from 'typewriter-effect'
+import { homePageData } from '~/lib/data/home-page.data'
 
 function AboutMeText() {
   return (
@@ -25,21 +26,16 @@ function AboutMeText() {
               onInit={(typewriter: any) => {
                 typewriter
                   .changeDelay(100)
-                  .typeString("I'm Hossein Talebi")
+                  .typeString(homePageData.aboutmeTitle)
                   .start()
               }}
             />
           </span>
-          Talented and experienced Front-end Developer with <b>+4</b> years of
-          experience executing with a plethora of diverse skills.
-          <br /> <br />
-          Equipped with a record of success in consistently identifying and
-          providing the technological needs of companies through ingenious
-          innovation.
-          <br /> <br />
-          Proficient in developing and creating user interfaces, writing and
-          testing codes, troubleshooting simple/complex issues, and implementing
-          new features based on user feedback.
+          <p
+            dangerouslySetInnerHTML={{
+              __html: homePageData.aboutmeText,
+            }}
+          ></p>
           <div className="mt-10 flex justify-end">
             <CvButton text="Download Cv" />
           </div>

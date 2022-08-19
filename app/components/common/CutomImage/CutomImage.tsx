@@ -18,11 +18,9 @@ const aspectRatio = {
 
 function CutomImage({ ratio = 'none', ...others }: IProps) {
   return (
-    <div className={`${aspectRatio[ratio]} relative`}>
+    <div className={`${aspectRatio[ratio]} relative rounded-lg bg-[#f2f2f22e]`}>
       <LazyLoadImage
         alt={'alt'}
-        effect="black-and-white"
-        placeholderSrc="/images/default-images/default.png"
         {...others}
         wrapperClassName={`!block absolute top-0 left-0  right-0 bottom-0  h-full w-full ${others.wrapperClassName}`}
         className={`${others.className} !block h-full w-full`}

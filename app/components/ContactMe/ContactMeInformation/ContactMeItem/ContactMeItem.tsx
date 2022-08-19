@@ -16,7 +16,7 @@ const ContactMeItem: FC<IProps> = ({ icon, text, title }) => {
       <div className="my-2">
         <h5 className="mb-[2px] text-lg font-bold">{title} </h5>
         <CopyToClipboard
-          text={title}
+          text={text}
           onCopy={() => {
             if (!copyDuration) {
               setCopyDuration(true)

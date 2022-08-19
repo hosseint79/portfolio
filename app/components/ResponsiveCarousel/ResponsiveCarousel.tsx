@@ -9,14 +9,14 @@ const ResponsiveCarousel = ({ slides }: IProps) => {
     <div className="flex-no-wrap flex overflow-auto py-2">
       {slides.map((item: any) => {
         return (
-          <div className=" mr-3 w-11/12 flex-shrink-0 ">
+          <a href={item.url} className="mr-3 block w-11/12 flex-shrink-0 ">
             <CutomImage
               alt={'alt'}
               ratio="8/5"
               className="rounded-lg"
               src={item.src} // use normal <img> attributes as props
             />
-          </div>
+          </a>
         )
       })}
     </div>
