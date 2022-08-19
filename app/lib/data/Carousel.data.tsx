@@ -8,8 +8,23 @@ import {
   SiTypescript,
 } from 'react-icons/si'
 import { DiReact } from 'react-icons/di'
-import CarouselContainer from './CarouselContainer/CarouselContainer'
+import CarouselContainer from '../../components/Carousel/CarouselContainer/CarouselContainer'
 import { BsFillBootstrapFill } from 'react-icons/bs'
+
+export const responsiveSlides = [
+  {
+    src: '/images/works/work1.jpg',
+    url: 'https://erp.sabak.org/',
+  },
+  {
+    src: '/images/works/work2.jpg',
+    url: 'https://navaa.co/',
+  },
+  {
+    src: '/images/works/work3.jpg',
+    url: 'https://zeemind.ir/',
+  },
+]
 
 export const slides = [
   {
