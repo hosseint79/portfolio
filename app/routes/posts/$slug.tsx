@@ -16,7 +16,6 @@ export const loader: LoaderFunction = async ({ params }) => {
 
 export default function PostSlug() {
   const { html, frontmatter } = useLoaderData()
-  console.log('html', html)
   return (
     <BlogLayout>
       <Container>

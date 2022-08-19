@@ -18,11 +18,11 @@ export const responsiveSlides = [
   },
   {
     src: '/images/works/work2.jpg',
-    url: 'https://navaa.co/',
+    url: 'https://zeemind.ir/',
   },
   {
     src: '/images/works/work3.jpg',
-    url: 'https://zeemind.ir/',
+    url: 'https://navaa.co/',
   },
 ]
 
@@ -50,25 +50,25 @@ export const slides = [
             animation: 'moveInRight',
             icon: <BsFillBootstrapFill size={52} color="#17d6d7" />,
             text: 'Bootstrap',
-            id: '2',
+            id: '3',
           },
           {
             animation: 'moveInLeft',
             icon: <SiTypescript size={52} color="#17d6d7" />,
             text: 'Typescript',
-            id: '1',
+            id: '4',
           },
           {
             animation: 'moveInUp',
             icon: <SiCss3 size={52} color="#17d6d7" />,
             text: 'Css',
-            id: '2',
+            id: '5',
           },
           {
             animation: 'moveInUp',
             icon: <SiLeaflet size={52} color="#17d6d7" />,
             text: 'Leaflet',
-            id: '2',
+            id: '6',
           },
         ]}
       />
@@ -97,25 +97,25 @@ export const slides = [
             animation: 'moveInRight',
             icon: <SiNextdotjs size={52} color="#17d6d7" />,
             text: 'Next js',
-            id: '2',
+            id: '3',
           },
           {
             animation: 'moveInLeft',
             icon: <SiTypescript size={52} color="#17d6d7" />,
             text: 'Typescript',
-            id: '1',
+            id: '4',
           },
           {
             animation: 'moveInUp',
             icon: <SiCss3 size={52} color="#17d6d7" />,
             text: 'Css',
-            id: '2',
+            id: '5',
           },
           {
             animation: 'moveInUp',
             icon: <SiMaterialui size={52} color="#17d6d7" />,
             text: 'Material Ui',
-            id: '2',
+            id: '6',
           },
         ]}
       />
@@ -145,25 +145,25 @@ export const slides = [
             animation: 'moveInRight',
             icon: <SiNextdotjs size={52} color="#17d6d7" />,
             text: 'Next js',
-            id: '2',
+            id: '3',
           },
           {
             animation: 'moveInLeft',
             icon: <SiTypescript size={52} color="#17d6d7" />,
             text: 'Typescript',
-            id: '1',
+            id: '4',
           },
           {
             animation: 'moveInUp',
             icon: <SiCss3 size={52} color="#17d6d7" />,
             text: 'Css',
-            id: '2',
+            id: '5',
           },
           {
             animation: 'moveInUp',
             icon: <SiMaterialui size={52} color="#17d6d7" />,
             text: 'Material Ui',
-            id: '2',
+            id: '6',
           },
         ]}
       />
