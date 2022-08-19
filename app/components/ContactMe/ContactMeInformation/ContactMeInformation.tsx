@@ -2,6 +2,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { TiLocation } from 'react-icons/ti'
 import { FiPhone } from 'react-icons/fi'
 import { ContactMeItem } from './ContactMeItem/ContactMeItem'
+import { homePageData } from '~/lib/data/home-page.data'
 
 function ContactMeInformation() {
   return (
@@ -9,7 +10,7 @@ function ContactMeInformation() {
       <ContactMeItem
         icon={<FiPhone size={30} className="mr-4 text-indigo-600" />}
         title="Call Me"
-        text="09397233907"
+        text={homePageData.contactInfo.phoneNumber}
       />
       <ContactMeItem
         icon={
@@ -21,12 +22,12 @@ function ContactMeInformation() {
           />
         }
         title="Email"
-        text=" hossein.w7979@gmail.com"
+        text={homePageData.contactInfo.email}
       />
       <ContactMeItem
         icon={<TiLocation size={33} className="mr-4 text-indigo-600" />}
         title="Location"
-        text="Iran - Sari"
+        text={homePageData.contactInfo.location}
       />
     </div>
   )

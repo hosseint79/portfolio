@@ -65,5 +65,9 @@ export const homePageData = {
       },
     ],
   },
-  contactInfo: {},
+  contactInfo: {
+    phoneNumber: '09397233907',
+    email: 'hossein.w7979@gmail.com',
+    location: 'Iran - Sari',
+  },
 }
