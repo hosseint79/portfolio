@@ -6,9 +6,9 @@ import { homePageData } from '~/lib/data/home-page.data'
 
 function ContactMeInformation() {
   return (
-    <div className="col-span-5 flex flex-col lg:col-span-2">
+    <div className="col-span-5 flex flex-col items-center lg:col-span-2 lg:items-start">
       <ContactMeItem
-        icon={<FiPhone size={30} className="mr-4 text-indigo-600" />}
+        icon={<FiPhone size={30} className="text-indigo-600 lg:mr-4" />}
         title="Call Me"
         text={homePageData.contactInfo.phoneNumber}
       />
@@ -18,14 +18,14 @@ function ContactMeInformation() {
             style={{
               fontSize: '30px',
             }}
-            className="mr-4 text-indigo-600"
+            className="text-indigo-600 lg:mr-4"
           />
         }
         title="Email"
         text={homePageData.contactInfo.email}
       />
       <ContactMeItem
-        icon={<TiLocation size={33} className="mr-4 text-indigo-600" />}
+        icon={<TiLocation size={33} className="text-indigo-600 lg:mr-4" />}
         title="Location"
         text={homePageData.contactInfo.location}
       />

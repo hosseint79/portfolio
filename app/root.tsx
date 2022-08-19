@@ -45,10 +45,11 @@ export default function App() {
           autoClose={3000}
           newestOnTop
           closeOnClick
-          rtl={true}
+          rtl={false}
           pauseOnFocusLoss={false}
           draggable
           pauseOnHover
+          theme="dark"
         />
         <Outlet />
         <ScrollRestoration />
